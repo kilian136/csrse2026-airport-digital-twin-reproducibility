@@ -1,0 +1,6 @@
+case_id,label,seed,planned_missions,completed_missions,completion_rate,operational_delay_rate,resource_delay_hours,fleet_utilization_rate,weather_affected_missions,runway_affected_missions,runway_reassignments,runway_closure_delay_hours,equipment_affected_missions,equipment_reassignments,equipment_outage_delay_hours,invariant_violations,transition_rejections,reproducible
+baseline,正常运行,42,320,320,1,0.3,69.46,0.1925,0,0,0,0,0,0,0,0,0,true
+weather_only,天气运行限制,42,320,320,1,0.3094,74.69,0.1927,95,0,0,0,0,0,0,0,0,true
+runway_closure_only,跑道临时关闭,42,320,320,1,0.3,69.46,0.1925,0,66,66,0,0,0,0,0,0,true
+equipment_outage_only,保障车辆故障,42,320,320,1,0.3531,107.92,0.1926,0,0,0,0,80,285,0,0,0,true
+combined,组合运行异常,42,320,320,1,0.375,122.15,0.1927,94,63,63,0,80,285,0,0,0,true

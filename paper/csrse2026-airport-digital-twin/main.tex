@@ -1,0 +1,294 @@
+\documentclass[runningheads]{llncs}
+% Springer LNCS final trim size and official 122 mm x 193 mm text block.
+% Declared explicitly so the desktop preview does not fall back to A4 media.
+\usepackage[
+  paperwidth=155mm,
+  paperheight=235mm,
+  textwidth=122mm,
+  textheight=193mm,
+  centering,
+  includeheadfoot=false
+]{geometry}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+\title{A Deterministic and Auditable 72-Hour Multi-Airport Digital-Twin Simulation Framework for Operational Disruption Experiments}
+\titlerunning{Auditable Multi-Airport Digital-Twin Simulation}
+\author{Kilian Sui}
+\authorrunning{K. Sui}
+\institute{Affiliation to be confirmed for submission\\\email{Corresponding email to be confirmed}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Airport digital twins are increasingly used for visualization and operational decision support, yet many implementations provide limited evidence on repeatability, rule compliance, and disturbance-isolation capability. This paper presents a deterministic and auditable 72-hour multi-airport simulation framework for a unified airline fleet operating across Hangzhou Xiaoshan, Shanghai Pudong, and Nanjing Lukou airports. The framework combines a frozen scenario snapshot, seed-controlled task generation, resource-constrained discrete-event execution, explicit runway, stand, aircraft, and ground-support constraints, transition guards, invariant audits, and event-log replay fingerprints. A paired five-condition experiment is conducted under normal operation, severe low visibility, temporary runway closure, ground-support-equipment outage, and combined disruption. Twenty seeds (42--61) yield 100 formal runs for a 65-aircraft fleet and approximately 320 missions per run. All runs satisfy the current operational-validity gates and the first seed is deterministically replayed. Relative to normal operation, weather restrictions increase mean resource waiting time by 6.49 h, equipment outages by 41.93 h, and combined disruptions by 59.50 h. Runway closure triggers an average of 66.15 runway reassignments without increasing aggregate resource waiting in the tested capacity regime. The results indicate that ground-support availability is the dominant modeled bottleneck, while spare runway capacity absorbs the selected closure. The contribution is not a claim of real-airport predictive validity; rather, it is a reproducible experimental substrate for subsequent multi-agent scheduling and resilience studies.
+
+\keywords{Airport digital twin \and Discrete-event simulation \and Operational disruption \and Deterministic replay \and Verification and validation \and Ground support equipment}
+\end{abstract}
+
+\section{Introduction}
+Airports are tightly coupled sociotechnical systems in which aircraft rotations, runway movements, stands, maintenance activities, and mobile ground-support resources interact under strict temporal and safety constraints. A local shortage or disruption may propagate through successive missions and across airports. Digital-twin research has therefore moved beyond asset visualization toward operational monitoring, simulation, and decision support. Conde et al. proposed an airport digital-twin conceptualization and data model for turnaround-event management, validated through an airport application \cite{conde2022}. Postorino et al. used discrete-event simulation to evaluate how airside disruptions propagate across landing, take-off, and turnaround processes \cite{postorino2020}. These studies demonstrate the value of integrated operational models, but reproducibility and explicit software-level rule auditing are not always treated as first-class experimental outputs.
+
+The practical difficulty is not merely to animate aircraft. A credible experiment must keep the aircraft rotation, stand occupancy, runway separation, maintenance state, and heterogeneous ground-service resources mutually consistent for the entire horizon. A visually plausible trace may still contain an impossible transition, such as an aircraft occupying two airports, a closed runway accepting a movement, or a service vehicle being assigned concurrently. Conversely, a disruption may trigger a valid substitution but cause no aggregate delay when spare capacity exists. For this reason, airport resilience cannot be inferred from animation alone; exposure, response mechanism, performance loss, and recovery must be recorded separately. Airside resilience studies likewise distinguish absorptive and restorative behavior under different disturbance types and durations \cite{mantecchini2023}.
+
+A second gap concerns credibility. Wright and Davidson warn that vague use of the term digital twin can blur the distinction between a model and a dynamically updated twin \cite{wright2020}. Bitencourt et al. further reported that relatively few digital-twin studies perform both verification and validation using a structured procedure \cite{bitencourt2025}. For simulation-based reliability research, a result should not only be numerically plausible; it should also be traceable to a versioned input, repeatable under controlled randomness, and rejected when operational invariants are violated.
+
+This distinction matters before introducing learning or multi-agent control. An optimizer can exploit an incorrect transition, an unbounded resource, or an inconsistent reset rule and still report an apparently superior objective value. The simulator must therefore act as an executable operational contract: proposed actions may change assignments and timing, but cannot bypass physical and lifecycle constraints. This paper concentrates on establishing that contract and its evidence chain before policy optimization.
+
+This paper develops a 72-hour, three-airport operational simulation framework with deterministic replay and automated rule auditing. It addresses the following research questions:
+\begin{itemize}
+  \item \textbf{RQ1:} Can a frozen multi-airport scenario produce complete, rule-compliant, and deterministically replayable 72-hour operation traces?
+  \item \textbf{RQ2:} How do weather restrictions, runway closure, and ground-support-equipment outage individually affect delay, resource waiting, and resource reassignment?
+  \item \textbf{RQ3:} Do combined disruptions produce a stronger operational effect than any single disruption?
+  \item \textbf{RQ4:} Which constrained resource becomes the dominant bottleneck under the tested conditions?
+\end{itemize}
+The paper contributes: (1) a unified three-airport scenario contract for a single airline fleet; (2) a deterministic event-execution and replay-audit pipeline; (3) invariant and transition-guard checks coupled to every experimental run; and (4) a paired multi-seed disruption experiment with confidence intervals and standardized within-seed effects.
+
+The remainder of the paper first positions the work against airport digital twins, ground-operation scheduling, resilience analysis, and simulation credibility. It then defines the system boundary and event semantics, describes the paired experiment, reports both performance and mechanism indicators, and closes with limitations and the pathway toward auditable multi-agent decision making.
+
+\section{Background and Related Work}
+\subsection{Airport Digital Twins and Operational Simulation}
+Airport digital-twin work covers information integration, turnaround management, air-traffic visualization, and resource optimization. Conde et al. connected heterogeneous airport information through a FIWARE-based reference architecture and demonstrated turnaround-oriented applications \cite{conde2022}. Chen et al. investigated a tangible mixed-reality digital twin for collaborative air-traffic-management operations, emphasizing shared situational awareness and human interaction \cite{chen2024}. Such work strengthens visualization and operational awareness, whereas the present study focuses on repeatable experiment execution and machine-checkable operational traces.
+
+The broader digital-twin literature describes a progression from digital models and shadows toward synchronized, lifecycle-connected representations. Fuller et al. summarized enabling technologies and open problems including connectivity, data quality, model fidelity, and interoperability \cite{fuller2020}. Jones et al. showed that inconsistent terminology complicates comparison between implementations \cite{jones2020}. Therefore, we use the term \emph{digital-twin simulation framework} conservatively: the current system has shared operational entities, maps, resources, state transitions, and scenario execution, but it is not yet continuously synchronized with live airport feeds.
+
+Disruption modeling has also received sustained attention. Postorino et al. integrated landing and take-off processes with turnaround activities to capture knock-on effects \cite{postorino2020}. Zhang et al. demonstrated that delay propagation depends jointly on network topology and airport operational performance \cite{zhang2020}. These findings motivate a multi-airport rather than isolated-airport boundary, even though the present experiment deliberately limits the network to three airports and one airline fleet.
+
+\subsection{Ground Handling, Stands, and Coupled Resources}
+Ground handling is particularly sensitive to scarce mobile resources and precedence constraints. Saggar et al. proposed a real-time booking mechanism for airport ground-support equipment under uncertainty \cite{saggar2021}, while Sahadevan et al. combined arrival-time prediction with allocation of limited resources across multiple aircraft \cite{sahadevan2023}. Tabares et al. formulated online fleet assignment in a multi-time-scale management structure for automated ground handling \cite{tabares2021}. Zhu et al. considered cooperative vehicle scheduling under flight-time uncertainty \cite{zhu2022}, and Zhang et al. jointly represented heterogeneous flights, operators, temporal restrictions, and service patterns in turnaround scheduling \cite{zhang2024}. Yao et al. further coupled stand allocation with support-vehicle scheduling, showing that optimizing either layer alone can conceal conflicts in the other \cite{yao2024}.
+
+These optimization studies provide increasingly capable schedulers, but their objectives differ from the present work. We do not claim a new optimal scheduling algorithm. Instead, we construct a controlled execution layer in which a future heuristic, mathematical program, or multi-agent policy can be compared under identical tasks, disturbances, and rule gates. The separation is intentional: first establish whether a proposed schedule is executable and auditable; then compare its quality.
+
+\subsection{Digital-Twin Credibility and Reproducibility}
+Digital twins integrate models, data, and decision processes, but terminology and validation practice remain inconsistent. Fuller et al. surveyed enabling technologies and open challenges for digital twins \cite{fuller2020}. Wright and Davidson identify a physical entity, an evolving data set, and dynamic model updating as distinguishing elements of a twin rather than a standalone model \cite{wright2020}. Bitencourt et al. identified limited use of structured verification and validation in digital-twin applications and argued that credibility objectives should be explicitly defined \cite{bitencourt2025}.
+
+The present work treats verification and validation as different layers. Software verification asks whether event transitions, resource occupancy, and accounting rules are implemented consistently. Deterministic replay, invariant audits, and transition guards address this layer. Validation asks whether the model adequately represents its intended real operational context. Because the current disturbances are synthetic and the parameters are not yet calibrated against historical operations, this paper claims experimental and software credibility, not full empirical validity.
+
+Behavioral validation may compare not only terminal outputs but also the traces that produced them. Mu\~noz et al. align physical and digital-twin traces to quantify behavioral fidelity \cite{munoz2024}. The current framework does not yet possess synchronized physical traces, but its event ledger and checkpoints are designed so that this stronger comparison becomes possible when operational records are available.
+
+Reproducibility also affects experimental design. Classical computer-experiment work emphasizes that conclusions depend on a documented input design rather than on isolated code executions \cite{sacks1989}. Heikes et al. described common random numbers as a means of comparing alternatives through synchronized random streams \cite{heikes1976}. Morris et al. recommend explicit seed control and preservation of generator state so that simulation results can be exactly reproduced \cite{morris2019}. Fehr et al. likewise identify transparency, re-executability, and deterministic computation as central principles of reproducible computational research \cite{fehr2021}. We operationalize these principles through frozen inputs, paired seeds, canonical event ordering, and trace fingerprints.
+
+Table~\ref{tab:literature} summarizes the positioning. Existing studies commonly emphasize visualization, prediction, resilience measurement, or optimization. The combination of multi-airport fleet continuity, resource-constrained execution, isolated disturbance adapters, deterministic replay, and per-run rule audits remains comparatively underdeveloped.
+
+\begin{table}[t]
+\caption{Representative work and the experimental gap addressed here.}\label{tab:literature}
+\centering\scriptsize
+\begin{tabularx}{\textwidth}{p{2.1cm}Xcccc}
+\toprule
+Study & Primary focus & Multi-airport & Coupled resources & Replay & Rule audit \\
+\midrule
+Conde et al. \cite{conde2022} & Turnaround information twin & -- & Partial & -- & -- \\
+Postorino et al. \cite{postorino2020} & Disruption simulation & -- & Yes & -- & -- \\
+Tabares et al. \cite{tabares2021} & Ground-fleet assignment & -- & Yes & -- & -- \\
+Yao et al. \cite{yao2024} & Stand--vehicle optimization & -- & Yes & -- & Feasibility \\
+Zhang et al. \cite{zhang2020} & Network delay propagation & Yes & Aggregate & -- & -- \\
+This study & Auditable disruption substrate & Yes & Yes & Yes & Yes \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Framework Design}
+\subsection{System Boundary and State Model}
+Let $A$ be the set of airports, $F$ the airline fleet, $R_a$ the runways at airport $a$, $S_a$ its compatible stands, and $G_a^k$ the available ground-support units of category $k$. A mission $m$ is a time-ordered chain
+\begin{equation}
+\mathcal{C}_m=\langle \text{release},\text{pushback},\text{taxi-out},\text{take-off},
+\text{cruise},\text{landing},\text{taxi-in},\text{service},\text{complete}\rangle .
+\end{equation}
+The aircraft state contains its airport or airborne location, lifecycle phase, assigned stand and runway, health attributes, and next eligible time. Resource states contain capacity, compatibility, availability windows, and active reservations. An event is represented as $e=(t,p,q,m,x)$, where $t$ is simulation time, $p$ is event priority, $q$ is a deterministic sequence key, $m$ is the mission identifier, and $x$ is the payload. Events are ordered lexicographically by $(t,p,q)$, eliminating implementation-dependent ordering when timestamps coincide.
+
+The model boundary includes airline aircraft movement between the three airports, runway and stand assignment, turnaround task precedence, maintenance eligibility, and limited support teams. It excludes passenger itineraries, crew legality, en-route air-traffic control, external airlines, and detailed microscopic vehicle collision avoidance. These exclusions prevent the current results from being misread as complete airport forecasts.
+\subsection{Scenario Contract}
+The simulation accepts a frozen scenario snapshot containing three airports, a single 65-aircraft fleet, aircraft health attributes, stands, runway profiles, ground-support vehicles, and route resources. Each run covers 72 hours. The default planning configuration limits each aircraft to five missions, uses a simulated fault probability of 0.025 and emergency probability of 0.01, enforces a 180-s runway separation, assumes 30-min ground-support service, and permits six parallel support teams.
+
+The snapshot is immutable during a batch and carries an identifier derived from its serialized content. Disturbances do not edit this baseline object; each condition is expressed as a separate adapter that overlays capacity multipliers, closure intervals, or availability masks. This prevents one condition from leaking into the next and supports a precise statement of what was changed. Generated artifacts retain the snapshot identifier, scenario identifier, seed, simulator version, and parameter set.
+
+Every generated mission references one aircraft, an origin and destination airport, departure and arrival resources, and a sequence of operational events. The same scenario snapshot and seed produce the same mission population before experimental disturbances are applied.
+
+\subsection{Resource-Constrained Event Execution}
+A discrete-event engine orders all events by simulation time and deterministic tie-breaking keys. Runway, stand, aircraft, maintenance, and ground-support availability are treated as explicit constraints. When a requested resource is unavailable, the engine may reassign a compatible resource or delay the dependent event. The state transition is committed only after the associated guard rules are satisfied.
+
+The engine records both intended and realized resource assignments. This enables the experiment to distinguish disruption exposure from operational response. For example, a runway closure may affect a mission and trigger reassignment without necessarily causing additional waiting if sufficient spare capacity remains.
+
+Resource acquisition is atomic at event level. If all required resources are feasible, reservations are committed and the event advances. Otherwise, the event is rescheduled to the earliest deterministic release time and the waiting duration is attributed to its resource category. Compatibility filters are applied before proximity preferences: a near stand or runway is never selected merely because it is close. This rule is important for later optimization because it prevents an agent from trading feasibility for a misleadingly short travel distance.
+
+\subsection{Audit and Replay Layers}
+Each run passes through three automated credibility gates:
+\begin{enumerate}
+  \item \textbf{End-to-end acceptance} checks whether planned missions form complete operational chains.
+  \item \textbf{Invariant auditing} checks resource exclusivity, state consistency, accounting identities, and mission completion relationships.
+  \item \textbf{Transition guarding} rejects state changes that violate the defined operational lifecycle.
+\end{enumerate}
+For deterministic replay, the same input contract, parameters, and seed are executed twice. Ordered event logs are reduced to versioned checkpoints and a fingerprint. Replay succeeds only when the event sequence, checkpoint states, and final metrics agree. Importantly, different seeds are expected to produce different mission instances; determinism is required only for repeated execution of the same seed.
+
+The principal invariants are: (i) every aircraft has exactly one mutually exclusive location state; (ii) a capacity-one resource has at most one overlapping reservation; (iii) a completed landing refers to an open, compatible runway; (iv) a parked aircraft refers to a compatible stand at its current airport; (v) lifecycle phases follow the permitted transition graph; and (vi) summarized counts equal counts reconstructed from the event log. A failed invariant invalidates the run rather than merely generating a warning.
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.92\textwidth}{\centering\small
+Frozen airport--fleet snapshot $+$ seed $\rightarrow$ task-chain generator $\rightarrow$
+resource-constrained event engine $\rightarrow$ event ledger and checkpoints\\[2pt]
+$\downarrow$ disturbance adapters \hfill $\downarrow$ transition guards and invariants\\[2pt]
+paired scenario metrics $\leftarrow$ validity gate $\leftarrow$ deterministic replay fingerprint}}
+\caption{Experimental execution and evidence pipeline. Disturbances alter declared parameters, while the baseline snapshot and audit rules remain fixed.}\label{fig:pipeline}
+\end{figure}
+
+\section{Experimental Method}
+\subsection{Experimental Objective and Hypotheses}
+The experiment is designed to test the framework, not to forecast the actual three airports. Four hypotheses correspond to the research questions. H1 states that every formal run can complete while satisfying the defined acceptance, invariant, and transition gates. H2 states that each injected disturbance produces its intended mechanism indicator. H3 states that weather and equipment outages increase waiting relative to paired baselines. H4 states that combined disruption produces the largest performance degradation among the tested conditions. No directional delay hypothesis is imposed for runway closure because reassignment may absorb the selected closure when spare capacity is available.
+\subsection{Paired Experimental Design}
+Five conditions are evaluated for each seed:
+\begin{table}[t]
+\caption{Experimental conditions.}\label{tab:conditions}
+\centering\small
+\begin{tabular}{p{2.7cm}p{8.1cm}}
+\toprule
+Condition & Disturbance definition \\
+\midrule
+Baseline & No injected weather, runway, or external equipment disruption. \\
+Weather only & Severe low visibility at all three airports from hour 0 to 18; runway-capacity factor 0.60 and ground-speed factor 0.65. \\
+Runway closure only & The shorter formal runway at each airport is closed from hour 4 to 14 for inspection. \\
+Equipment outage only & The first available unit in each ground-support category at each airport is unavailable from hour 0 to 14. \\
+Combined & Weather, runway closure, and equipment outage occur together using the same definitions. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Twenty seeds, 42 through 61, are used. Within each seed, all five conditions share the same frozen snapshot, planning parameters, and base task-generation randomness. Therefore, differences between a disrupted condition and its baseline are paired within seed. The experiment contains $20\times5=100$ formal runs. Seed 42 is additionally repeated for deterministic replay; replay runs are not counted as independent statistical samples.
+
+The same random stream controls mission generation and stochastic health events within a seed, following the common-random-numbers principle \cite{heikes1976}. Disturbance adapters are deterministic functions of scenario and simulation time. Consequently, paired differences primarily reflect the declared disturbance rather than a different mission sample. Seeds are treated as experimental replications, while the five conditions within a seed are not treated as independent observations.
+
+\subsection{Measures and Statistical Analysis}
+The primary outcomes are mission completion rate, operational delay rate, total resource waiting hours, average and 95th-percentile resource wait, and fleet utilization. Mechanism indicators include weather-affected missions, runway reassignments, and equipment reassignments. A run is operationally valid only if end-to-end acceptance is accepted, invariant status is passed, and transition-guard status is passed.
+
+Operational delay is recorded when a realized milestone exceeds its planned value under the simulator's delay rule. Resource waiting is the accumulated positive difference between requested and granted acquisition times. Reassignment counts record a difference between intended and realized compatible resources. These measures are deliberately separated: reassignment measures adaptation activity, whereas waiting measures its residual performance consequence. Fleet utilization is the proportion of aircraft-time spent in active mission phases.
+
+For outcome $y$ and disrupted condition $c$, the within-seed difference is
+\begin{equation}
+ d_{c,s}=y_{c,s}-y_{0,s},
+\end{equation}
+where $y_{0,s}$ is the baseline result for seed $s$. The mean difference is $\bar d_c$, its 95\% confidence interval uses the Student-$t$ critical value with $n-1$ degrees of freedom, and the paired standardized effect is
+\begin{equation}
+ d_z=\frac{\bar d_c}{s_d},
+\end{equation}
+where $s_d$ is the sample standard deviation of paired differences. Descriptive means, sample standard deviations, and 95\% confidence intervals are also reported for each condition.
+
+The analysis is confirmatory only at the level of the stated scenario family. Confidence intervals quantify between-seed variability under the implemented generator; they do not incorporate structural model error or parameter uncertainty. We report exact zero differences transparently rather than forcing a significance test with zero variance.
+
+\subsection{Artifact and Provenance Record}
+The experimental package contains the executable batch entry point, the disturbance and aggregation modules, machine-readable JSON and CSV outputs, and focused tests for replay, invariants, transition guards, and disruption isolation. The formal batch artifact records schema version 1.0, scenario identifier \texttt{SIM-72H-1792713600000}, seeds 42--61, five conditions, 100 runs, three airports, 65 aircraft, per-run validity fields, replay-checkpoint counts, and event-log fingerprints. Re-executing the published command reproduced the batch JSON and CSV byte-for-byte; their SHA-256 digests are retained in the accompanying evidence manifest. The single-seed JSON gained an empty transition-rejection-evidence array after an audit-schema extension, while its numerical outputs, event fingerprints, and CSV remained unchanged. This distinction is reported to avoid conflating schema evolution with stochastic result drift.
+
+\section{Results}
+All 100 formal runs passed the implemented operational-validity gates, and the five conditions for seed 42 were deterministically replayed. Each run planned approximately 320 missions and the mean completion rate was 1.00 under all conditions. Table~\ref{tab:results} summarizes the principal outcomes.
+
+\begin{table}[t]
+\caption{Results across 20 seeds. CI denotes a 95\% confidence interval.}\label{tab:results}
+\centering\scriptsize
+\begin{tabular}{lrrrrr}
+\toprule
+Condition & Delay rate & Wait h & Wait CI & $\Delta$ wait h & $d_z$ \\
+\midrule
+Baseline & 0.3398 & 113.70 & [93.42, 133.99] & 0.00 & 0.00 \\
+Weather only & 0.3566 & 120.19 & [99.67, 140.71] & 6.49 & 1.73 \\
+Runway closure & 0.3398 & 113.70 & [93.42, 133.99] & 0.00 & 0.00 \\
+Equipment outage & 0.3894 & 155.63 & [133.02, 178.24] & 41.93 & 3.37 \\
+Combined & 0.4142 & 173.20 & [149.99, 196.41] & 59.50 & 4.31 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The validity outcome supports H1 for the implemented test space: no formal run was retained with a failed lifecycle, accounting, or capacity invariant. Replay equality covered ordered checkpoints and final summaries, rather than only equality of an aggregate score. This distinction would expose two executions that happen to have the same total delay but different internal event histories.
+
+\begin{table}[t]
+\caption{Mechanism indicators and paired effects (means over 20 seeds).}\label{tab:mechanisms}
+\centering\small
+\begin{tabular}{lrrr}
+\toprule
+Condition & Affected missions & Runway reassign. & Equipment reassign. \\
+\midrule
+Baseline & 0.00 & 0.00 & 0.00 \\
+Weather only & 91.75 & 0.00 & 0.00 \\
+Runway closure & 0.00 & 66.15 & 0.00 \\
+Equipment outage & 0.00 & 0.00 & 271.85 \\
+Combined & 91.75 & 66.15 & 271.85 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Weather restrictions affect a mean of 91.75 missions and increase resource waiting by 6.49 h relative to paired baselines (95\% CI [4.73, 8.25]). Equipment outages produce 271.85 equipment reassignments on average and increase waiting by 41.93 h (95\% CI [36.10, 47.76]). The combined condition has the largest observed effect: a 59.50-h increase (95\% CI [53.03, 65.96]) and an operational delay rate of 0.4142.
+
+Runway closure yields 66.15 runway reassignments per run but no aggregate waiting-time increase in this configuration. This should not be interpreted as runway closure having no operational significance. Instead, the event mechanism is activated while the modeled spare capacity absorbs the closure without additional aggregate waiting. The result demonstrates why mechanism indicators and outcome indicators must be reported together.
+
+H2 is therefore supported for all three adapters: each isolated condition activates its own mechanism indicator, and the combined condition activates all three. H3 is supported for weather and equipment outage because their paired confidence intervals exclude zero. H4 is supported descriptively: combined disruption has the greatest delay rate and waiting-time increase. A factorial interaction claim is intentionally withheld.
+
+\section{Discussion}
+\subsection{Answers to the Research Questions}
+For RQ1, the current implementation produces complete 72-hour traces that pass the implemented rule gates and can be deterministically replayed. This establishes internal experimental consistency, not real-world predictive validity.
+
+For RQ2, the three isolated disturbances produce different signatures. Weather primarily reduces operational capacity and speed; runway closure causes resource substitution; equipment outage creates repeated support-resource reassignments and substantial waiting. For RQ3, the combined condition has the highest delay rate and waiting time. Its mean waiting increase (59.50 h) is greater than any single effect, although a formal factorial interaction design would be required before claiming a statistically identified nonlinear interaction. For RQ4, ground-support availability is the dominant modeled bottleneck under the selected parameters.
+
+\subsection{Reliability Significance}
+The framework supports reliability research in two complementary ways. First, it represents exogenous operational stressors and traces their effects through constrained mission chains. Second, it treats the simulator itself as a system requiring credibility evidence. A disruption result is retained only together with its scenario identifier, seed, event fingerprint, rule-audit outcome, and statistical pairing. This converts a visual demonstration into a reproducible experiment.
+
+The current prototype also provides an appropriate precondition for later multi-agent optimization. Future agents can propose runway, stand, maintenance, or ground-support decisions, while the existing transition guards and invariants serve as a safety and feasibility envelope. The present results should therefore be viewed as the controlled experimental baseline before agent policies are introduced.
+
+Three findings are practically instructive. First, the largest effect arises from support-equipment loss, indicating that nominal runway capacity alone is an incomplete proxy for operational resilience. Second, a closure can be operationally active yet performance-neutral under surplus capacity, so scenario validation must examine mechanism traces. Third, the combined waiting increase exceeds the sum of the reported mean weather and equipment increases, but the current design cannot determine whether this is a stable interaction or a consequence of the particular joint rule set. These observations define the next experiments rather than closing the empirical question.
+
+\subsection{Implications for Multi-Agent Evaluation}
+The framework separates an agent's proposal from the simulator's authority. An agent may request a stand, runway, maintenance action, or support-resource allocation; the transition layer checks compatibility, exclusivity, closure state, and lifecycle legality before commitment. Every accepted or rejected action can be written to the same event ledger. This supports three future comparisons: rule-based dispatch versus learned policies, local airport agents versus a network coordinator, and performance-only reward versus reward constrained by safety and service reliability.
+
+The paired snapshots also reduce ambiguity in policy evaluation. Candidate agents should receive identical tasks and disturbance realizations, and should be scored on completion, delay, waiting, recovery, violations, and computation time. A policy that improves delay by exploiting invalid transitions will fail the validity gate. Thus, the audit layer is not an additional optimization objective; it is a prerequisite for admitting a run into the comparison set.
+
+\section{Threats to Validity}
+\textbf{Construct validity.} Resource waiting and operational delay represent selected dimensions of resilience but do not yet include passenger impact, crew legality, fuel cost, emissions, or financial loss.
+
+\textbf{Internal validity.} The paired-seed design isolates the injected disturbance under a fixed implementation. Nevertheless, the combined experiment is not a full factorial design, so interaction effects cannot yet be separated rigorously.
+
+The implementation and the audit code are developed within the same project, creating a risk of common-mode error. Independent reference traces, mutation tests that deliberately violate invariants, and cross-implementation replay would strengthen verification.
+
+\textbf{External validity.} Weather windows, runway closures, and equipment failures are synthetic. The model has not yet been calibrated against historical operation records from the three airports. The results must not be interpreted as forecasts of actual airport performance.
+
+Airport geometry and resource inventories are represented at an operational abstraction appropriate for scheduling experiments, not certification or air-traffic-control use. The three-airport, single-airline scope also limits generalization to mixed airline priorities and larger networks.
+
+\textbf{Model scope.} External traffic, air-traffic-control decisions, passenger connections, crew rotations, and detailed vehicle-routing conflicts remain outside the present experiment. Moreover, all-airport simultaneous weather is a deliberately strong and simplified scenario.
+
+\textbf{Statistical conclusion validity.} Twenty paired seeds provide an initial conference-scale evidence base, but broader parameter sweeps and additional seeds would improve sensitivity analysis. Current effect sizes describe the implemented scenario distribution rather than a universal population of airport disruptions.
+
+\section{Conclusion and Future Work}
+This paper presented a deterministic and auditable 72-hour multi-airport digital-twin simulation framework for operational disruption experiments. A unified 65-aircraft fleet was simulated across three airports under five paired conditions and 20 random seeds. The framework combines resource-constrained event execution with end-to-end acceptance, invariant auditing, transition guards, and deterministic replay. Results show distinct disturbance mechanisms: weather increases delay moderately, runway closure is absorbed through reassignment in the tested capacity regime, equipment outage creates the largest single-resource bottleneck, and combined disruptions have the strongest overall effect.
+
+The next step is not to add an unconstrained intelligent agent directly. We will first introduce per-airport propagation metrics, recovery-time measures, and comparison policies such as first-come-first-served, static assignment, and rule-based dynamic reassignment. Historical or semi-physical data will then be used for parameter calibration. Multi-agent policies can subsequently be evaluated against the same frozen snapshots, paired seeds, and audit gates, enabling claims about optimization performance without sacrificing traceability or operational feasibility.
+
+\section*{Declaration on Generative AI}
+During manuscript preparation, a generative-AI tool was used to assist with language editing, structural drafting, and code-oriented document preparation. The author reviewed and revised the manuscript, verified the reported experimental values and cited sources, and remains fully responsible for the content. The experimental data reported in this paper were produced by the described simulator rather than generated by the language model.
+
+\begin{thebibliography}{99}
+\bibitem{conde2022} Conde, J., Mu\~noz-Arcentales, A., Romero, M., Rojo, J., Salvach\'ua, J., Huecas, G., Alonso, A.: Applying digital twins for the management of information in turnaround event operations in commercial airports. Advanced Engineering Informatics \textbf{54}, 101723 (2022). \doi{10.1016/j.aei.2022.101723}
+\bibitem{postorino2020} Postorino, M.N., Mantecchini, L., Malandri, C., Paganelli, F.: A methodological framework to evaluate the impact of disruptions on airport turnaround operations: A case study. Case Studies on Transport Policy \textbf{8}(2), 429--439 (2020). \doi{10.1016/j.cstp.2020.03.007}
+\bibitem{saggar2021} Saggar, S., Tomasella, M., Cattaneo, G., Matta, A.: Enhanced operational management of airport ground support equipment for better aircraft turnaround performance. In: Proceedings of the 2021 Winter Simulation Conference (2021). \url{https://www.informs-sim.org/wsc21papers/025.pdf}
+\bibitem{sahadevan2023} Sahadevan, D., Al Ali, H., Notman, D., Mukandavire, Z.: Optimising airport ground resource allocation for multiple aircraft using machine learning-based arrival time prediction. Aerospace \textbf{10}(6), 509 (2023). \doi{10.3390/aerospace10060509}
+\bibitem{chen2024} Chen, K., Nadirsha, T.N.M., Lilith, N., Alam, S., Svensson, \AA.: Tangible digital twin with shared visualization for collaborative air traffic management operations. Transportation Research Part C: Emerging Technologies \textbf{162}, 104546 (2024). \doi{10.1016/j.trc.2024.104546}
+\bibitem{wright2020} Wright, L., Davidson, S.: How to tell the difference between a model and a digital twin. Advanced Modeling and Simulation in Engineering Sciences \textbf{7}, 13 (2020). \doi{10.1186/s40323-020-00147-4}
+\bibitem{bitencourt2025} Bitencourt, J., Wooley, A., Harris, G.: Verification and validation of digital twins: A systematic literature review for manufacturing applications. International Journal of Production Research \textbf{63}(1), 342--370 (2025). \doi{10.1080/00207543.2024.2357741}
+\bibitem{fuller2020} Fuller, A., Fan, Z., Day, C., Barlow, C.: Digital twin: Enabling technologies, challenges and open research. IEEE Access \textbf{8}, 108952--108971 (2020). \doi{10.1109/ACCESS.2020.2998358}
+\bibitem{jones2020} Jones, D., Snider, C., Nassehi, A., Yon, J., Hicks, B.: Characterising the digital twin: A systematic literature review. CIRP Journal of Manufacturing Science and Technology \textbf{29}, 36--52 (2020). \doi{10.1016/j.cirpj.2020.02.002}
+\bibitem{mantecchini2023} Mantecchini, L., Paganelli, F., Postorino, M.N.: A comprehensive approach to assess transportation system resilience towards disruptive events: Case study on airside airport systems. Transport Policy \textbf{139}, 109--122 (2023). \doi{10.1016/j.tranpol.2023.05.011}
+\bibitem{zhang2020} Zhang, H., Wu, W., Zhang, S., Witlox, F.: Simulation analysis on flight delay propagation under different network configurations. IEEE Access \textbf{8}, 103236--103244 (2020). \doi{10.1109/ACCESS.2020.2999098}
+\bibitem{tabares2021} Tabares, D.A., Mora-Camino, F., Drouin, A.: A multi-time scale management structure for airport ground handling automation. Journal of Air Transport Management \textbf{90}, 101959 (2021). \doi{10.1016/j.jairtraman.2020.101959}
+\bibitem{zhu2022} Zhu, S., Sun, H., Guo, X.: Cooperative scheduling optimization for ground-handling vehicles by considering flights' uncertainty. Computers \& Industrial Engineering \textbf{169}, 108092 (2022). \doi{10.1016/j.cie.2022.108092}
+\bibitem{zhang2024} Zhang, S., Li, X., Yuan, X., Liu, J., Peng, J., Li, D.: Optimising the flight turnaround schedules: An improved sliding time windows approach based on MILP and CP models. Computers \& Operations Research \textbf{161}, 106433 (2024). \doi{10.1016/j.cor.2023.106433}
+\bibitem{yao2024} Yao, M., Hu, M., Yin, J., Su, J., Yin, M.: A two-stage optimization model for airport stand allocation and ground support vehicle scheduling. Applied Sciences \textbf{14}(23), 11407 (2024). \doi{10.3390/app142311407}
+\bibitem{heikes1976} Heikes, R.G., Montgomery, D.C., Rardin, R.L.: Using common random numbers in simulation experiments---an approach to statistical analysis. SIMULATION \textbf{27}(3), 81--85 (1976). \doi{10.1177/003754977602700301}
+\bibitem{morris2019} Morris, T.P., White, I.R., Crowther, M.J.: Using simulation studies to evaluate statistical methods. Statistics in Medicine \textbf{38}(11), 2074--2102 (2019). \doi{10.1002/sim.8086}
+\bibitem{fehr2021} Fehr, J., Heiland, J., Himpe, C., Saak, J.: Learning from reproducing computational results: Introducing three principles and the Reproduction Package. Philosophical Transactions of the Royal Society A \textbf{379}, 20200069 (2021). \doi{10.1098/rsta.2020.0069}
+\bibitem{sacks1989} Sacks, J., Welch, W.J., Mitchell, T.J., Wynn, H.P.: Design and analysis of computer experiments. Statistical Science \textbf{4}(4), 409--423 (1989). \doi{10.1214/ss/1177012413}
+\bibitem{munoz2024} Mu\~noz, P., Wimmer, M., Troya, J., Vallecillo, A.: Measuring the fidelity of a physical and a digital twin using trace alignments. IEEE Transactions on Software Engineering \textbf{50}(12), 3122--3145 (2024). \doi{10.1109/TSE.2024.3462978}
+\end{thebibliography}
+\end{document}

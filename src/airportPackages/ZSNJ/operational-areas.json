@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSNJ",
+  "coordinateSystem": "WGS84",
+  "geoJsonCoordinateOrder": "longitude_latitude",
+  "updatedAt": "2026-10-17T00:00:00.000Z",
+  "features": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSNJ-TERMINAL-T1", "airportIdent": "ZSNJ", "kind": "terminal", "name": "T1航站楼", "createdAt": "2026-10-17T00:00:00.000Z", "dataStatus": "partial", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "Polygon", "coordinates": [[[118.8652099, 31.7359582], [118.8662823, 31.7362210], [118.8669995, 31.7351632], [118.8662520, 31.7344815], [118.8652099, 31.7359582]]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSNJ-T1-CONCOURSE-A", "airportIdent": "ZSNJ", "kind": "concourse", "name": "T1-A指廊", "createdAt": "2026-10-17T00:00:00.000Z", "parentTerminalId": "ZSNJ-TERMINAL-T1", "dataStatus": "partial", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "Polygon", "coordinates": [[[118.8611946, 31.7365109], [118.8619558, 31.7369872], [118.8644309, 31.7370115], [118.8644984, 31.7365570], [118.8625489, 31.7364627], [118.8616527, 31.7360019], [118.8611946, 31.7365109]]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSNJ-T1-CONCOURSE-B", "airportIdent": "ZSNJ", "kind": "concourse", "name": "T1-B指廊", "createdAt": "2026-10-17T00:00:00.000Z", "parentTerminalId": "ZSNJ-TERMINAL-T1", "dataStatus": "partial", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "Polygon", "coordinates": [[[118.8645503, 31.7365146], [118.8649776, 31.7365498], [118.8651620, 31.7359649], [118.8661937, 31.7344828], [118.8665531, 31.7342191], [118.8663004, 31.7338914], [118.8655537, 31.7344567], [118.8647182, 31.7358682], [118.8645503, 31.7365146]]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSNJ-T1-CONCOURSE-C", "airportIdent": "ZSNJ", "kind": "concourse", "name": "T1-C指廊", "createdAt": "2026-10-17T00:00:00.000Z", "parentTerminalId": "ZSNJ-TERMINAL-T1", "dataStatus": "partial", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "Polygon", "coordinates": [[[118.8639655, 31.7323647], [118.8660536, 31.7334441], [118.8663561, 31.7338159], [118.8667599, 31.7335758], [118.8663614, 31.7330828], [118.8642143, 31.7319718], [118.8639655, 31.7323647]]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSNJ-TERMINAL-T2", "airportIdent": "ZSNJ", "kind": "terminal", "name": "T2航站楼", "createdAt": "2026-10-17T00:00:00.000Z", "dataStatus": "partial", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "Polygon", "coordinates": [[[118.8697120, 31.7327858], [118.8722545, 31.7341428], [118.8739114, 31.7335727], [118.8695858, 31.7312815], [118.8697120, 31.7327858]]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSNJ-T2-CONCOURSE", "airportIdent": "ZSNJ", "kind": "concourse", "name": "T2指廊", "createdAt": "2026-10-17T00:00:00.000Z", "parentTerminalId": "ZSNJ-TERMINAL-T2", "dataStatus": "partial", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "Polygon", "coordinates": [[[118.8658295, 31.7292240], [118.8761584, 31.7347720], [118.8766749, 31.7345746], [118.8657898, 31.7287472], [118.8658295, 31.7292240]]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSNJ-CARGO-AREA", "airportIdent": "ZSNJ", "kind": "cargo_facility", "name": "货运区", "createdAt": "2026-10-17T00:00:00.000Z", "facilityFunctions": ["cargo_handling", "uld_staging", "cargo_loading_support"], "dataStatus": "partial", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "Polygon", "coordinates": [[[118.8778934, 31.7372659], [118.8848153, 31.7408165], [118.8864396, 31.7387664], [118.8797724, 31.7350656], [118.8778934, 31.7372659]]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSNJ-MAINTENANCE-AREA", "airportIdent": "ZSNJ", "kind": "maintenance_area", "name": "维修区", "createdAt": "2026-10-17T00:00:00.000Z", "dataStatus": "partial", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "Polygon", "coordinates": [[[118.8391206, 31.7257716], [118.8449451, 31.7289517], [118.8468107, 31.7264608], [118.8408388, 31.7231782], [118.8391206, 31.7257716]]] }
+      }
+    ]
+  }
+}

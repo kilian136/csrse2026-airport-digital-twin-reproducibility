@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSHC",
+  "terminalId": "ZSHC-TERMINAL-T2",
+  "concourseId": "ZSHC-T2-CONCOURSE-A",
+  "gatePrefix": "T2-A",
+  "source": "user_wgs84",
+  "gates": [
+    { "number": 1, "coordinate": [120.4306303, 30.2409986], "bridges": [{ "coordinate": [120.4304972, 30.2408308] }] },
+    { "number": 2, "coordinate": [120.4304239, 30.2413505], "bridges": [{ "coordinate": [120.4302946, 30.2411844] }] },
+    { "number": 3, "coordinate": [120.4302104, 30.2417062], "bridges": [{ "coordinate": [120.4300851, 30.2415376] }] },
+    { "number": 4, "coordinate": [120.4300098, 30.2420564], "bridges": [{ "coordinate": [120.4298647, 30.2417885] }] },
+    { "number": 5, "coordinate": [120.4299307, 30.2423127], "bridges": [{ "coordinate": [120.4297162, 30.2422461] }] },
+    { "number": 6, "coordinate": [120.4299813, 30.2426285], "bridges": [{ "position": "inner", "coordinate": [120.4298372, 30.2425215] }, { "position": "outer", "coordinate": [120.4296047, 30.2425856] }] },
+    { "number": 7, "coordinate": [120.4300661, 30.2427546], "bridges": [{ "coordinate": [120.4299601, 30.242917] }] },
+    { "number": 8, "coordinate": [120.4306342, 30.2430003], "bridges": [{ "coordinate": [120.4304265, 30.2431397] }] },
+    { "number": 9, "coordinate": [120.4310818, 30.2432007], "bridges": [{ "coordinate": [120.4307011, 30.2433258] }] },
+    { "number": 10, "coordinate": [120.4314076, 30.2433479], "bridges": [{ "coordinate": [120.431204, 30.2434794] }] },
+    { "number": 11, "coordinate": [120.4317694, 30.2435912], "bridges": [{ "coordinate": [120.4315762, 30.2436612] }] },
+    { "number": 12, "coordinate": [120.4321592, 30.2436683], "bridges": [{ "coordinate": [120.4319763, 30.2438831] }] },
+    { "number": 13, "coordinate": [120.4324426, 30.2436261], "bridges": [{ "position": "inner", "coordinate": [120.4323376, 30.2437947] }, { "position": "outer", "coordinate": [120.4325578, 30.243876] }] },
+    { "number": 14, "coordinate": [120.4326886, 30.243469], "bridges": [{ "coordinate": [120.4327254, 30.2437071] }] },
+    { "number": 15, "coordinate": [120.4327404, 30.2431945], "bridges": [{ "coordinate": [120.4328912, 30.2432888] }] },
+    { "number": 16, "coordinate": [120.4326866, 30.2428121], "bridges": [{ "position": "inner", "coordinate": [120.4328587, 30.2429272] }, { "position": "outer", "coordinate": [120.433014, 30.2429281] }] },
+    { "number": 17, "coordinate": [120.4323293, 30.2426222], "bridges": [{ "coordinate": [120.4325545, 30.2426021] }] },
+    { "number": 18, "coordinate": [120.4319343, 30.2425324], "bridges": [{ "coordinate": [120.4322721, 30.2424319] }] },
+    { "number": 19, "coordinate": [120.431346, 30.2419251], "bridges": [{ "coordinate": [120.4315577, 30.2420967] }] },
+    { "number": 20, "coordinate": [120.4318328, 30.2409669], "bridges": [{ "position": "inner", "coordinate": [120.4317553, 30.2411131] }, { "position": "outer", "coordinate": [120.4318829, 30.2411319] }] },
+    { "number": 21, "coordinate": [120.432189, 30.2403869], "bridges": [{ "position": "inner", "coordinate": [120.4321028, 30.2405323] }, { "position": "outer", "coordinate": [120.4321999, 30.2406605] }] }
+  ]
+}

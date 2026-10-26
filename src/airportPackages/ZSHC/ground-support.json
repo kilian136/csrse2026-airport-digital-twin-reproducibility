@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSHC",
+  "coordinateSystem": "WGS84",
+  "geoJsonCoordinateOrder": "longitude_latitude",
+  "updatedAt": "2026-10-14T00:00:00.000Z",
+  "features": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-SUPPORT-BASE-GSE-C",
+          "airportIdent": "ZSHC",
+          "kind": "ground_support_base",
+          "name": "中央车辆待命点（仿真规划）",
+          "supportBaseId": "GSE-C",
+          "facilityStatus": "simulation_planned",
+          "createdAt": "2026-09-27T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [120.4297870, 30.2400740]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-SUPPORT-BASE-GSE-E",
+          "airportIdent": "ZSHC",
+          "kind": "ground_support_base",
+          "name": "东部车辆待命点（仿真规划）",
+          "supportBaseId": "GSE-E",
+          "facilityStatus": "simulation_planned",
+          "createdAt": "2026-09-27T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [120.4315157, 30.2413774]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-SUPPORT-BASE-FUEL",
+          "airportIdent": "ZSHC",
+          "kind": "fuel_facility",
+          "name": "萧山航油车辆驻点",
+          "supportBaseId": "FUEL",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [120.4158564, 30.2251154]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-SUPPORT-BASE-ARFF",
+          "airportIdent": "ZSHC",
+          "kind": "ground_support_base",
+          "name": "萧山消防救援驻点",
+          "supportBaseId": "ARFF",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [120.4402674, 30.2407261]
+        }
+      }
+    ]
+  }
+}

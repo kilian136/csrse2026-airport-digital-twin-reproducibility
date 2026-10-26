@@ -1,0 +1,313 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSHC",
+  "coordinateSystem": "WGS84",
+  "geoJsonCoordinateOrder": "longitude_latitude",
+  "updatedAt": "2026-09-22T00:00:00.000Z",
+  "features": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-MAINTENANCE-DEPARTMENT",
+          "airportIdent": "ZSHC",
+          "kind": "maintenance_department",
+          "name": "维修部门",
+          "supportBaseId": "GSE-W",
+          "createdAt": "2026-09-24T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [120.4035449, 30.2304370],
+            [120.4101192, 30.2333160],
+            [120.4104443, 30.2329276],
+            [120.4127023, 30.2339254],
+            [120.4136124, 30.2323938],
+            [120.4057169, 30.2289750],
+            [120.4043606, 30.2292506],
+            [120.4035449, 30.2304370]
+          ]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-MAINTENANCE-MA1",
+          "airportIdent": "ZSHC",
+          "kind": "maintenance_area",
+          "name": "MA1维修机坪",
+          "createdAt": "2026-09-22T00:00:00.000Z",
+          "aircraftSizeCategory": "small",
+          "orientationMode": "nose_in_tail_out",
+          "plannedStandCount": 24,
+          "mappedStandCount": 24,
+          "dataStatus": "complete",
+          "source": "user_wgs84"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4033343, 30.2326582], [120.4090933, 30.2352055], [120.4101, 30.2334609], [120.4043998, 30.2309212], [120.4033343, 30.2326582]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-MAINTENANCE-MA2",
+          "airportIdent": "ZSHC",
+          "kind": "maintenance_area",
+          "name": "MA2维修机坪",
+          "createdAt": "2026-09-22T00:00:00.000Z",
+          "aircraftSizeCategory": "medium",
+          "orientationMode": "nose_out_tail_in",
+          "plannedStandCount": 15,
+          "mappedStandCount": 15,
+          "dataStatus": "complete",
+          "source": "user_wgs84"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4103627, 30.2347077], [120.4134449, 30.2360858], [120.4141934, 30.234651], [120.4105407, 30.2330801], [120.4103627, 30.2347077]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-MAINTENANCE-MB",
+          "airportIdent": "ZSHC",
+          "kind": "maintenance_area",
+          "name": "MB维修机坪",
+          "createdAt": "2026-09-22T00:00:00.000Z",
+          "aircraftSizeCategory": "large",
+          "orientationMode": "nose_out_tail_in",
+          "plannedStandCount": 4,
+          "mappedStandCount": 4,
+          "dataStatus": "complete",
+          "source": "user_wgs84"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4101424, 30.235523], [120.4130176, 30.2368073], [120.413415, 30.2361561], [120.4105273, 30.2348753], [120.4101424, 30.235523]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-01", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-01", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 1, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4039307, 30.2325153] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-02", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-02", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 2, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4043524, 30.2327024] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-03", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-03", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 3, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4047666, 30.2328806] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-04", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-04", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 4, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4054442, 30.2331921] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-05", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-05", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 5, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4058609, 30.233377] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-06", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-06", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 6, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4062801, 30.2335574] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-07", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-07", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 7, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4068548, 30.2338178] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-08", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-08", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 8, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4072715, 30.2340027] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-09", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-09", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 9, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4076933, 30.2341788] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-10", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-10", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 10, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4082981, 30.2344526] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-11", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-11", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 11, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4087098, 30.2346352] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-12", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-12", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 12, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4091239, 30.2348243] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-13", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-13", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 13, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4041333, 30.2318434] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-14", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-14", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 14, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.40455, 30.2320282] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-15", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-15", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 15, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4049692, 30.2322087] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-16", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-16", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 16, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4056545, 30.2325072] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-17", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-17", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 17, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.406066, 30.2327007] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-18", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-18", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 18, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4064928, 30.23289] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-19", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-19", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 19, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4070702, 30.2331352] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-20", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-20", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 20, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4074767, 30.2333265] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-21", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-21", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 21, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4078934, 30.2335113] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-22", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-22", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 22, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4084958, 30.2337785] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-23", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-23", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 23, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4089174, 30.2339656] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA1-STAND-24", "airportIdent": "ZSHC", "kind": "stand", "name": "MA1-24", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA1", "standNumber": 24, "aircraftSizeCategory": "small", "orientationMode": "nose_in_tail_out", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4093341, 30.2341504] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-01", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-01", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 1, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4107164, 30.2348022] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-02", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-02", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 2, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4111229, 30.2349934] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-03", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-03", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 3, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4115438, 30.2351865] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-04", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-04", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 4, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4119579, 30.2353657] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-05", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-05", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 5, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4123782, 30.2355431] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-06", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-06", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 6, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4127962, 30.235733] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-07", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-07", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 7, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4132123, 30.2359176] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-08", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-08", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 8, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.410837, 30.2332226] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-09", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-09", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 9, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4112387, 30.2333963] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-10", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-10", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 10, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4117248, 30.2336119] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-11", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-11", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 11, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4121577, 30.2337769] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-12", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-12", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 12, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4125737, 30.2339614] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-13", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-13", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 13, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4129813, 30.2341602] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-14", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-14", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 14, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4133994, 30.2343502] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MA2-STAND-15", "airportIdent": "ZSHC", "kind": "stand", "name": "MA2-15", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MA2", "standNumber": 15, "aircraftSizeCategory": "medium", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4138917, 30.234564] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MB-STAND-01", "airportIdent": "ZSHC", "kind": "stand", "name": "MB-01", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MB", "standNumber": 1, "aircraftSizeCategory": "large", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4109036, 30.2351637] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MB-STAND-02", "airportIdent": "ZSHC", "kind": "stand", "name": "MB-02", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MB", "standNumber": 2, "aircraftSizeCategory": "large", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4115764, 30.2354613] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MB-STAND-03", "airportIdent": "ZSHC", "kind": "stand", "name": "MB-03", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MB", "standNumber": 3, "aircraftSizeCategory": "large", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4123416, 30.2358006] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-MB-STAND-04", "airportIdent": "ZSHC", "kind": "stand", "name": "MB-04", "createdAt": "2026-09-22T00:00:00.000Z", "parentZoneId": "ZSHC-MAINTENANCE-MB", "standNumber": 4, "aircraftSizeCategory": "large", "orientationMode": "nose_out_tail_in", "dataStatus": "complete", "source": "user_wgs84" },
+        "geometry": { "type": "Point", "coordinates": [120.4130153, 30.2361007] }
+      }
+    ]
+  }
+}

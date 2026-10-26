@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSNJ",
+  "authority": "candidate_designation",
+  "designationBasis": "clockwise_from_north",
+  "createdAt": "2026-10-17T00:00:00.000Z",
+  "positions": [
+    {
+      "id": "ZSNJ-CAND-STAND-01",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-001-1",
+      "sequence": 1,
+      "displayName": "ZSNJ候选机位01",
+      "mapLabel": "01",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-02",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-002-1",
+      "sequence": 2,
+      "displayName": "ZSNJ候选机位02",
+      "mapLabel": "02",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-03",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-003-1",
+      "sequence": 3,
+      "displayName": "ZSNJ候选机位03",
+      "mapLabel": "03",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-04",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-004-1",
+      "sequence": 4,
+      "displayName": "ZSNJ候选机位04",
+      "mapLabel": "04",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-05",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-005-1",
+      "sequence": 5,
+      "displayName": "ZSNJ候选机位05",
+      "mapLabel": "05",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-06",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-007-1",
+      "sequence": 6,
+      "displayName": "ZSNJ候选机位06",
+      "mapLabel": "06",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-07",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-009-1",
+      "sequence": 7,
+      "displayName": "ZSNJ候选机位07",
+      "mapLabel": "07",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-08",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-010-1",
+      "sequence": 8,
+      "displayName": "ZSNJ候选机位08",
+      "mapLabel": "08",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-09",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-011-1",
+      "sequence": 9,
+      "displayName": "ZSNJ候选机位09",
+      "mapLabel": "09",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-10",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-012-1",
+      "sequence": 10,
+      "displayName": "ZSNJ候选机位10",
+      "mapLabel": "10",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-11",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-013-1",
+      "sequence": 11,
+      "displayName": "ZSNJ候选机位11",
+      "mapLabel": "11",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-12",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-014-1",
+      "sequence": 12,
+      "displayName": "ZSNJ候选机位12",
+      "mapLabel": "12",
+      "classification": "candidate_unclassified"
+    },
+    {
+      "id": "ZSNJ-CAND-STAND-13",
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-015-1",
+      "sequence": 13,
+      "displayName": "ZSNJ候选机位13",
+      "mapLabel": "13",
+      "classification": "candidate_unclassified"
+    }
+  ]
+}

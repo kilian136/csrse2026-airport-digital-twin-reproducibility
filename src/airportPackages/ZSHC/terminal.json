@@ -1,0 +1,586 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSHC",
+  "coordinateSystem": "WGS84",
+  "geoJsonCoordinateOrder": "longitude_latitude",
+  "updatedAt": "2026-09-22T00:00:00.000Z",
+  "features": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-TERMINAL-T1",
+          "airportIdent": "ZSHC",
+          "kind": "terminal",
+          "name": "T1航站楼",
+          "createdAt": "2026-09-22T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4206698, 30.2358022], [120.4235509, 30.2370845], [120.4250806, 30.2380944], [120.4269052, 30.2385894], [120.4286272, 30.2393458], [120.4288148, 30.23908], [120.420829, 30.2355447], [120.4206698, 30.2358022]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-T1-CONCOURSE-A",
+          "airportIdent": "ZSHC",
+          "kind": "concourse",
+          "name": "T1-A指廊",
+          "createdAt": "2026-09-22T00:00:00.000Z",
+          "parentTerminalId": "ZSHC-TERMINAL-T1",
+          "preferredAircraftSizeCategory": "large",
+          "compatibleAircraftSizeCategories": ["small", "medium", "large"],
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4197298, 30.2376083], [120.4201886, 30.2377942], [120.4212, 30.2361102], [120.4207411, 30.2359039], [120.4197298, 30.2376083]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-T1-CONCOURSE-B",
+          "airportIdent": "ZSHC",
+          "kind": "concourse",
+          "name": "T1-B指廊",
+          "createdAt": "2026-09-22T00:00:00.000Z",
+          "parentTerminalId": "ZSHC-TERMINAL-T1",
+          "preferredAircraftSizeCategory": "medium",
+          "compatibleAircraftSizeCategories": ["small", "medium", "large"],
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4239875, 30.2394891], [120.4244275, 30.2396874], [120.425303, 30.2381997], [120.4248583, 30.2380096], [120.4239875, 30.2394891]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-T1-CONCOURSE-C",
+          "airportIdent": "ZSHC",
+          "kind": "concourse",
+          "name": "T1-C指廊",
+          "createdAt": "2026-09-22T00:00:00.000Z",
+          "parentTerminalId": "ZSHC-TERMINAL-T1",
+          "preferredAircraftSizeCategory": "small",
+          "compatibleAircraftSizeCategories": ["small", "medium", "large"],
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4270863, 30.2408644], [120.427512, 30.2410464], [120.4284952, 30.2393707], [120.4280692, 30.239148], [120.4270863, 30.2408644]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-GATE-01", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-A-G01", "createdAt": "2026-09-22T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-A", "gateNumber": 1, "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4198945, 30.2366979] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-GATE-02", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-A-G02", "createdAt": "2026-09-22T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-A", "gateNumber": 2, "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.419398, 30.2374626] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-GATE-03", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-A-G03", "createdAt": "2026-09-22T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-A", "gateNumber": 3, "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4193187, 30.237907] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-GATE-04", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-A-G04", "createdAt": "2026-09-22T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-A", "gateNumber": 4, "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4200644, 30.2380899] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-GATE-05", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-A-G05", "createdAt": "2026-09-22T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-A", "gateNumber": 5, "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4203392, 30.2381862] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-GATE-06", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-A-G06", "createdAt": "2026-09-22T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-A", "gateNumber": 6, "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4206597, 30.2376194] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-GATE-07", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-A-G07", "createdAt": "2026-09-22T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-A", "gateNumber": 7, "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4209088, 30.2371341] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-GATE-08", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-A-G08", "createdAt": "2026-09-22T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-A", "gateNumber": 8, "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4213202, 30.2364654] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G01-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G01内侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-01", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4198945, 30.2366979], [120.4198098, 30.2365051]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G01-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G01外侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-01", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4198945, 30.2366979], [120.4196254, 30.2364865]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G02-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G02内侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-02", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.419398, 30.2374626], [120.4195239, 30.2372724]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G02-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G02外侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-02", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.419398, 30.2374626], [120.419397, 30.2372572]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G03-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G03内侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-03", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4193187, 30.237907], [120.4191851, 30.2377389]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G03-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G03外侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-03", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4193187, 30.237907], [120.4189974, 30.2378251]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G04-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G04内侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-04", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4200644, 30.2380899], [120.4198357, 30.2380554]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G04-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G04外侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-04", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4200644, 30.2380899], [120.4198134, 30.2381797]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G05-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G05内侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-05", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4203392, 30.2381862], [120.4204256, 30.2384976]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G05-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G05外侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-05", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4203392, 30.2381862], [120.4203165, 30.238553]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G06-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G06内侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-06", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4206597, 30.2376194], [120.4206348, 30.2378621]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G06-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G06外侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-06", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4206597, 30.2376194], [120.4206973, 30.2379662]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G07-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G07内侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-07", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4209088, 30.2371341], [120.4209671, 30.2373808]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G07-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G07外侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-07", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4209088, 30.2371341], [120.4211385, 30.237366]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G08-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G08内侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-08", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4213202, 30.2364654], [120.421356, 30.2367728]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-A-G08-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-A-G08外侧廊桥", "createdAt": "2026-09-22T00:00:00.000Z", "parentGateId": "ZSHC-T1-A-GATE-08", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4213202, 30.2364654], [120.4214521, 30.2367329]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-01", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G01", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 1, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4243593, 30.2382] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-02", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G02", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 2, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4240705, 30.2387977] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-03", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G03", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 3, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4236616, 30.2393219] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-04", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G04", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 4, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4235454, 30.2396632] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-05", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G05", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 5, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4240887, 30.2398588] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-06", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G06", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 6, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4245225, 30.2399577] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-07", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G07", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 7, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4247754, 30.2396704] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-08", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G08", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 8, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4249693, 30.2393436] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-09", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G09", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 9, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4251474, 30.2390441] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-10", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G10", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 10, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4253117, 30.2387655] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-GATE-11", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-B-G11", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-B", "gateNumber": 11, "aircraftSizeCategory": "medium", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4255023, 30.2384306] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G01-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G01廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-01", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4243593, 30.2382], [120.4241592, 30.2379913]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G02-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G02内侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-02", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4240705, 30.2387977], [120.4240066, 30.2384789]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G02-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G02外侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-02", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4240705, 30.2387977], [120.4238986, 30.2385826]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G03-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G03内侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-03", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4236616, 30.2393219], [120.423805, 30.239126]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G03-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G03外侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-03", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4236616, 30.2393219], [120.4236877, 30.2391231]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G04-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G04内侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-04", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4235454, 30.2396632], [120.423332, 30.2395746]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G04-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G04外侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-04", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4235454, 30.2396632], [120.4231914, 30.2396245]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G05-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G05内侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-05", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4240887, 30.2398588], [120.4238575, 30.2398334]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G05-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G05外侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-05", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4240887, 30.2398588], [120.4237436, 30.2399933]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G06-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G06内侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-06", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4245225, 30.2399577], [120.4244178, 30.2401993]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G06-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G06外侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-06", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4245225, 30.2399577], [120.4246704, 30.2403207]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G07-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G07廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-07", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4247754, 30.2396704], [120.4248881, 30.2398724]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G08-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G08廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-08", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4249693, 30.2393436], [120.4250444, 30.2396265]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G09-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G09廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-09", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4251474, 30.2390441], [120.4252661, 30.2392049]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G10-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G10廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-10", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4253117, 30.2387655], [120.4254581, 30.2389536]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-B-G11-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-B-G11廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-B-GATE-11", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4255023, 30.2384306], [120.425655, 30.2385842]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-01", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G01", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 1, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4275745, 30.2394189] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-02", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G02", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 2, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4273726, 30.2398155] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-03", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G03", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 3, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4271954, 30.2400999] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-04", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G04", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 4, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4269923, 30.2404285] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-05", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G05", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 5, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4267501, 30.2407781] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-06", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G06", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 6, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4268346, 30.2411183] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-07", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G07", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 7, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4273592, 30.2413029] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-08", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G08", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 8, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4276917, 30.2413534] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-09", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G09", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 9, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4279529, 30.2409068] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-10", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G10", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 10, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4280746, 30.2406255] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-11", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G11", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 11, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4282918, 30.2402926] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-12", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G12", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 12, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4284528, 30.2399725] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-GATE-13", "airportIdent": "ZSHC", "kind": "gate", "name": "T1-C-G13", "createdAt": "2026-09-23T00:00:00.000Z", "parentTerminalId": "ZSHC-TERMINAL-T1", "parentConcourseId": "ZSHC-T1-CONCOURSE-C", "gateNumber": 13, "aircraftSizeCategory": "small", "dataStatus": "complete", "source": "user_wgs84", "operational": true },
+        "geometry": { "type": "Point", "coordinates": [120.4286922, 30.2396592] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G01-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G01廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-01", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4275745, 30.2394189], [120.4276093, 30.2391337]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G02-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G02廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-02", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4273726, 30.2398155], [120.4273421, 30.2396055]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G03-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G03廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-03", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4271954, 30.2400999], [120.4271619, 30.239886]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G04-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G04廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-04", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4269923, 30.2404285], [120.4269486, 30.240268]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G05-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G05廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-05", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4267501, 30.2407781], [120.4267998, 30.2405346]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G06-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G06内侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-06", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4268346, 30.2411183], [120.4266078, 30.2410611]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G06-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G06外侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-06", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4268346, 30.2411183], [120.4265576, 30.241179]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G07-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G07内侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-07", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4273592, 30.2413029], [120.4271372, 30.2412511]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G07-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G07外侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-07", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4273592, 30.2413029], [120.4270344, 30.2414352]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G08-BRIDGE-INNER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G08内侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-08", "bridgePosition": "inner", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4276917, 30.2413534], [120.4276535, 30.2415272]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G08-BRIDGE-OUTER", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G08外侧廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-08", "bridgePosition": "outer", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4276917, 30.2413534], [120.4276383, 30.2416598]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G09-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G09廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-09", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4279529, 30.2409068], [120.4280112, 30.2410903]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G10-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G10廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-10", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4280746, 30.2406255], [120.4282021, 30.2407904]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G11-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G11廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-11", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4282918, 30.2402926], [120.4284006, 30.2404701]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G12-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G12廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-12", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4284528, 30.2399725], [120.4285875, 30.2401354]] }
+      },
+      {
+        "type": "Feature",
+        "properties": { "id": "ZSHC-T1-C-G13-BRIDGE-01", "airportIdent": "ZSHC", "kind": "boarding_bridge", "name": "T1-C-G13廊桥", "createdAt": "2026-09-23T00:00:00.000Z", "parentGateId": "ZSHC-T1-C-GATE-13", "dataStatus": "complete", "source": "user_wgs84", "operational": false },
+        "geometry": { "type": "LineString", "coordinates": [[120.4286922, 30.2396592], [120.4287605, 30.239864]] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-TERMINAL-T2",
+          "airportIdent": "ZSHC",
+          "kind": "terminal",
+          "name": "T2航站楼",
+          "createdAt": "2026-09-23T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4307797, 30.2393772], [120.4316047, 30.2397338], [120.4333692, 30.2367646], [120.4329418, 30.2365885], [120.4330149, 30.2364655], [120.4326371, 30.2362979], [120.4307797, 30.2393772]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-T2-CONCOURSE-A",
+          "airportIdent": "ZSHC",
+          "kind": "concourse",
+          "name": "T2-A指廊",
+          "createdAt": "2026-09-23T00:00:00.000Z",
+          "parentTerminalId": "ZSHC-TERMINAL-T2",
+          "preferredAircraftSizeCategory": "small",
+          "compatibleAircraftSizeCategories": ["small", "medium", "large"],
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4319396, 30.2393415], [120.4301142, 30.2424526], [120.4317546, 30.2432342], [120.4321809, 30.2435044], [120.4325251, 30.2433596], [120.4324765, 30.2430068], [120.4319276, 30.2428377], [120.4307358, 30.2422889], [120.4323041, 30.2395555], [120.4319396, 30.2393415]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-T2-CONCOURSE-B",
+          "airportIdent": "ZSHC",
+          "kind": "concourse",
+          "name": "T2-B指廊",
+          "createdAt": "2026-09-23T00:00:00.000Z",
+          "parentTerminalId": "ZSHC-TERMINAL-T2",
+          "preferredAircraftSizeCategory": "medium",
+          "compatibleAircraftSizeCategories": ["small", "medium", "large"],
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4319304, 30.2393385], [120.4323515, 30.2395253], [120.4326604, 30.2394663], [120.4336266, 30.2398813], [120.4341212, 30.2401682], [120.4344713, 30.2400531], [120.4344349, 30.2397193], [120.4337931, 30.239509], [120.4328984, 30.2391054], [120.4327849, 30.238717], [120.4323947, 30.238544], [120.4319304, 30.2393385]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-T2-CONCOURSE-C",
+          "airportIdent": "ZSHC",
+          "kind": "concourse",
+          "name": "T2-C指廊",
+          "createdAt": "2026-09-23T00:00:00.000Z",
+          "parentTerminalId": "ZSHC-TERMINAL-T2",
+          "preferredAircraftSizeCategory": "medium",
+          "compatibleAircraftSizeCategories": ["small", "medium", "large"],
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4325096, 30.2385611], [120.4327945, 30.2386875], [120.4346969, 30.2354757], [120.4348105, 30.2355186], [120.4351071, 30.2350194], [120.4345087, 30.234754], [120.4342257, 30.2352742], [120.4343805, 30.2353354], [120.4325096, 30.2385611]]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSHC-T2-CONCOURSE-D",
+          "airportIdent": "ZSHC",
+          "kind": "concourse",
+          "name": "T2-D指廊",
+          "createdAt": "2026-09-23T00:00:00.000Z",
+          "parentTerminalId": "ZSHC-TERMINAL-T2",
+          "preferredAircraftSizeCategory": "large",
+          "compatibleAircraftSizeCategories": ["small", "medium", "large"],
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[[120.4309232, 30.2350573], [120.4328554, 30.2358899], [120.4333498, 30.2350745], [120.4321335, 30.2345418], [120.4325127, 30.2338685], [120.431803, 30.2335851], [120.4309232, 30.2350573]]]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSHC",
+  "terminalId": "ZSHC-TERMINAL-T2",
+  "concourseId": "ZSHC-T2-CONCOURSE-D",
+  "gatePrefix": "T2-D",
+  "source": "user_wgs84",
+  "gates": [
+    { "number": 1, "coordinate": [120.4326009, 30.2342301], "bridges": [{ "coordinate": [120.4327991, 30.2342996] }] },
+    { "number": 2, "coordinate": [120.4327439, 30.2339076], "bridges": [{ "coordinate": [120.4328572, 30.2340171] }] },
+    { "number": 3, "coordinate": [120.432473, 30.233578], "bridges": [{ "position": "inner", "coordinate": [120.4326667, 30.2335216] }, { "position": "outer", "coordinate": [120.4327609, 30.2334093] }] },
+    { "number": 4, "coordinate": [120.4321666, 30.2333472], "bridges": [{ "coordinate": [120.4323167, 30.2332794] }] },
+    { "number": 5, "coordinate": [120.4317675, 30.2333875], "bridges": [{ "position": "inner", "coordinate": [120.4317619, 30.2332507] }, { "position": "outer", "coordinate": [120.4315802, 30.2332333] }] },
+    { "number": 6, "coordinate": [120.43146, 30.2336819], "bridges": [{ "coordinate": [120.4313821, 30.233505] }] },
+    { "number": 7, "coordinate": [120.4312706, 30.2339851], "bridges": [{ "coordinate": [120.4311653, 30.2338159] }] },
+    { "number": 8, "coordinate": [120.4310961, 30.2342634], "bridges": [{ "coordinate": [120.4309521, 30.2341363] }] }
+  ]
+}

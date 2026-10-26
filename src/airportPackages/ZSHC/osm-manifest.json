@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSHC",
+  "source": "OpenStreetMap Overpass",
+  "license": "ODbL",
+  "capturedAt": "2026-09-28T03:31:09.421Z",
+  "center": {
+    "latitude": 30.23609,
+    "longitude": 120.428865
+  },
+  "radiusMeters": 6500,
+  "bounds": {
+    "south": 30.177699773625584,
+    "west": 120.36128041718683,
+    "north": 30.294480226374418,
+    "east": 120.49644958281317
+  },
+  "rawElementCount": 1483,
+  "counts": {
+    "runway": 2,
+    "taxiway": 363,
+    "taxilane": 0,
+    "apron": 9,
+    "parking_position": 380,
+    "gate": 113,
+    "terminal": 9,
+    "holding_position": 26,
+    "hangar": 3,
+    "service_road": 578
+  },
+  "usagePolicy": {
+    "operationalNetwork": [
+      "runway lines",
+      "taxiway lines",
+      "taxilane lines",
+      "parking_position lines"
+    ],
+    "referenceOnly": [
+      "apron",
+      "parking_position points",
+      "gate",
+      "terminal",
+      "holding_position",
+      "hangar"
+    ],
+    "vehicleNetworkCandidate": [
+      "highway=service ways (read-only candidate; requires manual validation)"
+    ]
+  }
+}

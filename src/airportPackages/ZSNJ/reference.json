@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSNJ",
+  "coordinateSystem": "WGS84",
+  "geoJsonCoordinateOrder": "longitude_latitude",
+  "updatedAt": "2026-10-17T05:06:12.891Z",
+  "features": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSNJ-REFERENCE-POINT",
+          "airportIdent": "ZSNJ",
+          "kind": "reference_point",
+          "name": "南京禄口机场标定中心",
+          "createdAt": "2026-10-17T05:06:12.891Z",
+          "dataStatus": "partial",
+          "source": "openstreetmap",
+          "operational": false
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [118.862, 31.742]
+        }
+      }
+    ]
+  }
+}

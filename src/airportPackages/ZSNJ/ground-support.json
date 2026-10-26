@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSNJ",
+  "coordinateSystem": "WGS84",
+  "geoJsonCoordinateOrder": "longitude_latitude",
+  "updatedAt": "2026-10-18T00:00:00.000Z",
+  "features": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSNJ-TUG-BASE-01",
+          "airportIdent": "ZSNJ",
+          "kind": "ground_support_base",
+          "name": "牵引车停驻点一",
+          "supportBaseId": "ZSNJ-TUG-01",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-18T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [118.8644236, 31.7363578] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSNJ-TUG-BASE-02",
+          "airportIdent": "ZSNJ",
+          "kind": "ground_support_base",
+          "name": "牵引车停驻点二",
+          "supportBaseId": "ZSNJ-TUG-02",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-18T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [118.8657907, 31.7340576] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSNJ-TUG-BASE-03",
+          "airportIdent": "ZSNJ",
+          "kind": "ground_support_base",
+          "name": "牵引车停驻点三",
+          "supportBaseId": "ZSNJ-TUG-03",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-18T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [118.8689795, 31.7317113] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSNJ-TUG-BASE-04",
+          "airportIdent": "ZSNJ",
+          "kind": "ground_support_base",
+          "name": "牵引车停驻点四",
+          "supportBaseId": "ZSNJ-TUG-04",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-18T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [118.8737054, 31.7342931] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSNJ-ARFF-BASE",
+          "airportIdent": "ZSNJ",
+          "kind": "ground_support_base",
+          "name": "消防车停驻点",
+          "supportBaseId": "ZSNJ-ARFF",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-18T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [118.8737054, 31.7342931] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSNJ-FUEL-BASE",
+          "airportIdent": "ZSNJ",
+          "kind": "fuel_facility",
+          "name": "航油车停驻点",
+          "supportBaseId": "ZSNJ-FUEL",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-18T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [118.8780263, 31.7374024] }
+      }
+    ]
+  }
+}

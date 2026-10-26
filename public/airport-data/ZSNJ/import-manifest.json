@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSNJ",
+  "source": "OpenStreetMap Overpass",
+  "license": "ODbL",
+  "capturedAt": "2026-10-17T05:06:12.891Z",
+  "center": {
+    "latitude": 31.742,
+    "longitude": 118.862
+  },
+  "radiusMeters": 6500,
+  "bounds": {
+    "south": 31.683609773625584,
+    "west": 118.79334000176745,
+    "north": 31.800390226374418,
+    "east": 118.93065999823254
+  },
+  "rawElementCount": 951,
+  "counts": {
+    "runway": 2,
+    "taxiway": 265,
+    "taxilane": 0,
+    "apron": 7,
+    "parking_position": 426,
+    "gate": 63,
+    "terminal": 3,
+    "holding_position": 12,
+    "hangar": 2,
+    "service_road": 171
+  },
+  "incompleteKinds": [
+    "入境航班专用航站区周边机位引导线与机坪滑行线"
+  ],
+  "knownGaps": [
+    {
+      "id": "ZSNJ-GAP-IMMIGRATION-APRON-01",
+      "name": "入境航班专用航站区机坪路网缺口",
+      "bounds": {
+        "south": 31.7365,
+        "west": 118.8805,
+        "north": 31.739,
+        "east": 118.8835
+      },
+      "sourceEvidence": "OSM小范围全量查询仅返回机坪面、1条parking_position线和车辆服务路，未返回taxiway或taxilane。",
+      "status": "manual_calibration_required",
+      "operationalAuthority": false
+    }
+  ],
+  "usagePolicy": {
+    "operationalNetwork": [
+      "runway lines",
+      "taxiway lines",
+      "taxilane lines",
+      "parking_position lines"
+    ],
+    "referenceOnly": [
+      "apron",
+      "parking_position points",
+      "gate",
+      "terminal",
+      "holding_position",
+      "hangar"
+    ],
+    "vehicleNetworkCandidate": [
+      "highway=service ways (read-only candidate; requires manual validation)"
+    ]
+  },
+  "serviceRoadImport": {
+    "source": "OpenStreetMap Overpass",
+    "highway": "service",
+    "authority": "candidate_only",
+    "marginMeters": 300,
+    "bounds": {
+      "south": 31.710821466475025,
+      "west": 118.83596261381528,
+      "north": 31.753485833524973,
+      "east": 118.89002838618471
+    },
+    "wayCount": 171,
+    "oneWayCount": 12
+  }
+}

@@ -1,0 +1,6 @@
+case_id,label,runs,validity_rate,mission_mean,completion_rate_mean,delay_rate_mean,delay_rate_ci95_lower,delay_rate_ci95_upper,resource_delay_hours_mean,resource_delay_hours_sd,resource_delay_hours_ci95_lower,resource_delay_hours_ci95_upper,resource_delay_difference_vs_baseline,resource_delay_difference_ci95_lower,resource_delay_difference_ci95_upper,resource_delay_effect_dz,weather_affected_mean,runway_reassignments_mean,equipment_reassignments_mean
+baseline,正常运行,20,1,319.95,1,0.3398,0.3149,0.3646,113.703,43.3372,93.4208,133.9852,0,0,0,0,0,0,0
+weather_only,天气运行限制,20,1,319.95,1,0.3566,0.3314,0.3818,120.1915,43.8505,99.6691,140.7139,6.4885,4.7317,8.2453,1.7285,91.75,0,0
+runway_closure_only,跑道临时关闭,20,1,319.95,1,0.3398,0.3149,0.3646,113.703,43.3372,93.4208,133.9852,0,0,0,0,0,66.15,0
+equipment_outage_only,保障车辆故障,20,1,319.9,1,0.3894,0.3637,0.415,155.6315,48.3086,133.0226,178.2404,41.9285,36.0988,47.7582,3.366,0,0,271.85
+combined,组合运行异常,20,1,319.9,1,0.4142,0.3888,0.4396,173.202,49.5964,149.9904,196.4136,59.499,53.0342,65.9638,4.3073,90.15,62.55,269.55

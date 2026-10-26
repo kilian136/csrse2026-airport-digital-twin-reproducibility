@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the accompanying manuscript."
+title: "CSRSE 2026 Multi-Airport Digital-Twin Reproducibility Package"
+type: software
+authors:
+  - family-names: Sui
+    given-names: Kilian
+version: 1.0.0
+date-released: 2026-10-26
+abstract: "Code, frozen inputs, tests, formal outputs, and deterministic-replay evidence for a 72-hour three-airport operational disruption experiment."
+repository-code: "TO_BE_ASSIGNED_AFTER_GITHUB_PUBLICATION"
+license: "All rights reserved until a public license is selected."

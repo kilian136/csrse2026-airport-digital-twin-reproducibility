@@ -1,0 +1,691 @@
+{
+  "schemaVersion": "1.1.0",
+  "airportIdent": "ZSNJ",
+  "coordinateSystem": "WGS84",
+  "authority": "manual_calibration_draft",
+  "exportedAt": "2026-10-17T09:59:03.871Z",
+  "segments": [
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-002-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-002-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:51:13.895Z",
+      "coordinates": [
+        [
+          118.86388988896584,
+          31.73378177945324
+        ],
+        [
+          118.86421014114762,
+          31.733763692105697
+        ],
+        [
+          118.86445446576153,
+          31.733705079467413
+        ],
+        [
+          118.864605740319,
+          31.73361480424694
+        ],
+        [
+          118.86484874862612,
+          31.733285463019683
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-003-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-003-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:51:45.162Z",
+      "coordinates": [
+        [
+          118.86368488454377,
+          31.733672361177966
+        ],
+        [
+          118.86390433874175,
+          31.733690482648456
+        ],
+        [
+          118.86407839156783,
+          31.73361236501553
+        ],
+        [
+          118.86446732898975,
+          31.733027878973374
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-004-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-004-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:51:55.715Z",
+      "coordinates": [
+        [
+          118.86330524672161,
+          31.733469734402576
+        ],
+        [
+          118.86365215113364,
+          31.73342986884856
+        ],
+        [
+          118.86404957222038,
+          31.732876912490696
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-005-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-005-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:52:24.470Z",
+      "coordinates": [
+        [
+          118.86251083521114,
+          31.73305472699323
+        ],
+        [
+          118.8636881029924,
+          31.732620974739234
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-001-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-001-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:53:11.667Z",
+      "coordinates": [
+        [
+          118.8639196659326,
+          31.734085648441066
+        ],
+        [
+          118.86422697991412,
+          31.733898641014036
+        ],
+        [
+          118.86455199696468,
+          31.733874096047828
+        ],
+        [
+          118.86529535135412,
+          31.734171841037778
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-006-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-006-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:53:21.325Z",
+      "coordinates": [
+        [
+          118.86298161269463,
+          31.733305949367434
+        ],
+        [
+          118.86288693598948,
+          31.733147406115748
+        ],
+        [
+          118.86291955433302,
+          31.733002799664447
+        ],
+        [
+          118.8630956993087,
+          31.732835788948805
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-007-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-007-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:53:36.380Z",
+      "coordinates": [
+        [
+          118.86294795757652,
+          31.731730712764573
+        ],
+        [
+          118.86318379853003,
+          31.731640567594596
+        ],
+        [
+          118.8633852393258,
+          31.731640073806247
+        ],
+        [
+          118.86355049815404,
+          31.731674274176072
+        ],
+        [
+          118.86396720885085,
+          31.731869689364785
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-008-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-008-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:53:45.005Z",
+      "coordinates": [
+        [
+          118.86332631918856,
+          31.73120357758083
+        ],
+        [
+          118.86333642949768,
+          31.73136199218588
+        ],
+        [
+          118.86338837755017,
+          31.7315067331716
+        ],
+        [
+          118.86352295501672,
+          31.73166857411563
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-009-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-009-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:53:59.384Z",
+      "coordinates": [
+        [
+          118.86386561152068,
+          31.730501278299528
+        ],
+        [
+          118.8638879242863,
+          31.730729215114422
+        ],
+        [
+          118.86395773057103,
+          31.73096449892911
+        ],
+        [
+          118.86428506990433,
+          31.731625274181923
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-010-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-010-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:54:14.651Z",
+      "coordinates": [
+        [
+          118.86515227608982,
+          31.730449947423452
+        ],
+        [
+          118.86526785258667,
+          31.730686174414345
+        ],
+        [
+          118.8652493736837,
+          31.730883337012102
+        ],
+        [
+          118.86514900110387,
+          31.731162803571877
+        ],
+        [
+          118.8647745134557,
+          31.731656002571057
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-011-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-011-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:54:23.944Z",
+      "coordinates": [
+        [
+          118.86571435373799,
+          31.730726471179892
+        ],
+        [
+          118.86578609700462,
+          31.730944786660103
+        ],
+        [
+          118.86575808836432,
+          31.731154864369998
+        ],
+        [
+          118.86562273505723,
+          31.731352651733147
+        ],
+        [
+          118.86520923755239,
+          31.73187003341117
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-012-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-012-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:54:34.691Z",
+      "coordinates": [
+        [
+          118.86611483284679,
+          31.73095823024815
+        ],
+        [
+          118.86619327796399,
+          31.73115311905093
+        ],
+        [
+          118.86612432248535,
+          31.731404348363313
+        ],
+        [
+          118.86596797272375,
+          31.73164493460503
+        ],
+        [
+          118.86559081235418,
+          31.732055695548965
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-013-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-013-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:54:56.664Z",
+      "coordinates": [
+        [
+          118.86657558479618,
+          31.73118015443346
+        ],
+        [
+          118.86664078137994,
+          31.731349969239744
+        ],
+        [
+          118.86663005040015,
+          31.73147925747402
+        ],
+        [
+          118.86654234578208,
+          31.731612466174795
+        ],
+        [
+          118.86600317987518,
+          31.732242791201855
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-014-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-014-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:55:09.884Z",
+      "coordinates": [
+        [
+          118.86707759762623,
+          31.731475106979318
+        ],
+        [
+          118.86715232394732,
+          31.731632005649985
+        ],
+        [
+          118.86707310299181,
+          31.731796745335245
+        ],
+        [
+          118.86695979221827,
+          31.73190728537061
+        ],
+        [
+          118.86640365898626,
+          31.73247454647735
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-PGL-015-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-PGL-015-1",
+      "kind": "parking_position",
+      "createdAt": "2026-10-17T09:55:20.909Z",
+      "coordinates": [
+        [
+          118.86745723544618,
+          31.731677738116943
+        ],
+        [
+          118.86753389875133,
+          31.73181766826471
+        ],
+        [
+          118.8675097640704,
+          31.73199380770184
+        ],
+        [
+          118.86736681801,
+          31.732187540678225
+        ],
+        [
+          118.86682796243849,
+          31.732674012553005
+        ]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-SRD-001-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-SRD-001-1",
+      "kind": "service_road",
+      "createdAt": "2026-10-19T14:10:58.171Z",
+      "coordinates": [
+        [118.8446707, 31.7295304],
+        [118.84504530241173, 31.72964587101019],
+        [118.8453560334471, 31.72967876003986],
+        [118.84558664976902, 31.72966888707306],
+        [118.84580941834508, 31.729578844322717],
+        [118.84599041321371, 31.729333537309543],
+        [118.84801561017753, 31.726558421682682],
+        [118.84803196056998, 31.726415182080814],
+        [118.84797604399478, 31.726309351367775],
+        [118.84792012741946, 31.726203520533915],
+        [118.84778818372814, 31.726019115854825],
+        [118.84764806483946, 31.725906331085113],
+        [118.84162752592533, 31.72265463146124]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-SRD-002-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-SRD-002-1",
+      "kind": "service_road",
+      "createdAt": "2026-10-19T14:11:30.999Z",
+      "coordinates": [
+        [118.846017575561, 31.72930279529899],
+        [118.84782559700636, 31.730205493961577],
+        [118.8481239, 31.7298116],
+        [118.84981716885551, 31.72738205390408]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-SRD-003-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-SRD-003-1",
+      "kind": "service_road",
+      "createdAt": "2026-10-19T14:12:11.806Z",
+      "coordinates": [
+        [118.8701558, 31.7428606],
+        [118.86868057833334, 31.742119000044596],
+        [118.86865037460751, 31.74200675440963],
+        [118.86869332274227, 31.741856647832705],
+        [118.86877888755049, 31.741710059785774],
+        [118.8696297350823, 31.740587665215187],
+        [118.86846195698735, 31.739964423876103],
+        [118.86711460265718, 31.741667761632613]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-SRD-004-1",
+      "name": "CORRIDOR-ZSNJ-MANUAL-E-SRD-004-1",
+      "kind": "service_road",
+      "createdAt": "2026-10-19T14:12:30.764Z",
+      "coordinates": [
+        [118.86639194779099, 31.738878878821424],
+        [118.8651155107662, 31.740639310413016]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-SRD-005-1",
+      "name": "T2机位211就近保障道路接入",
+      "kind": "service_road",
+      "createdAt": "2026-10-19T14:35:00.000Z",
+      "coordinates": [
+        [118.8730614, 31.7321091],
+        [118.8745022, 31.7331755]
+      ]
+    },
+    {
+      "id": "CORRIDOR-ZSNJ-MANUAL-E-SRD-006-1",
+      "name": "T2机位212就近保障道路接入",
+      "kind": "service_road",
+      "createdAt": "2026-10-19T14:35:00.000Z",
+      "coordinates": [
+        [118.8722432, 31.7316497],
+        [118.869722, 31.7320055]
+      ]
+    }
+  ],
+  "compiledCorridors": [
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-002-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988638899-1217337818",
+        "ZSNJ-MANUAL-N-2988642101-1217337637",
+        "ZSNJ-MANUAL-N-2988644545-1217337051",
+        "ZSNJ-MANUAL-N-2988646057-1217336148",
+        "ZSNJ-MANUAL-N-2988648487-1217332855"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-002-1",
+        "ZSNJ-MANUAL-E-PGL-002-2",
+        "ZSNJ-MANUAL-E-PGL-002-3",
+        "ZSNJ-MANUAL-E-PGL-002-4"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-003-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988636849-1217336724",
+        "ZSNJ-MANUAL-N-2988639043-1217336905",
+        "ZSNJ-MANUAL-N-2988640784-1217336124",
+        "ZSNJ-MANUAL-N-2988644673-1217330279"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-003-1",
+        "ZSNJ-MANUAL-E-PGL-003-2",
+        "ZSNJ-MANUAL-E-PGL-003-3"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-004-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988633052-1217334697",
+        "ZSNJ-MANUAL-N-2988636522-1217334299",
+        "ZSNJ-MANUAL-N-2988640496-1217328769"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-004-1",
+        "ZSNJ-MANUAL-E-PGL-004-2"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-005-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988625108-1217330547",
+        "ZSNJ-MANUAL-N-2988636881-1217326210"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-005-1"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-001-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988639197-1217340856",
+        "ZSNJ-MANUAL-N-2988642270-1217338986",
+        "ZSNJ-MANUAL-N-2988645520-1217338741",
+        "ZSNJ-MANUAL-N-2988652954-1217341718"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-001-1",
+        "ZSNJ-MANUAL-E-PGL-001-2",
+        "ZSNJ-MANUAL-E-PGL-001-3"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-006-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988629816-1217333059",
+        "ZSNJ-MANUAL-N-2988628869-1217331474",
+        "ZSNJ-MANUAL-N-2988629196-1217330028",
+        "ZSNJ-MANUAL-N-2988630957-1217328358"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-006-1",
+        "ZSNJ-MANUAL-E-PGL-006-2",
+        "ZSNJ-MANUAL-E-PGL-006-3"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-007-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988629480-1217317307",
+        "ZSNJ-MANUAL-N-2988631838-1217316406",
+        "ZSNJ-MANUAL-N-2988633852-1217316401",
+        "ZSNJ-MANUAL-N-2988635505-1217316743",
+        "ZSNJ-MANUAL-N-2988639672-1217318697"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-007-1",
+        "ZSNJ-MANUAL-E-PGL-007-2",
+        "ZSNJ-MANUAL-E-PGL-007-3",
+        "ZSNJ-MANUAL-E-PGL-007-4"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-008-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988633263-1217312036",
+        "ZSNJ-MANUAL-N-2988633364-1217313620",
+        "ZSNJ-MANUAL-N-2988633884-1217315067",
+        "ZSNJ-MANUAL-N-2988635230-1217316686"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-008-1",
+        "ZSNJ-MANUAL-E-PGL-008-2",
+        "ZSNJ-MANUAL-E-PGL-008-3"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-009-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988638656-1217305013",
+        "ZSNJ-MANUAL-N-2988638879-1217307292",
+        "ZSNJ-MANUAL-N-2988639577-1217309645",
+        "ZSNJ-MANUAL-N-2988642851-1217316253"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-009-1",
+        "ZSNJ-MANUAL-E-PGL-009-2",
+        "ZSNJ-MANUAL-E-PGL-009-3"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-010-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988651523-1217304499",
+        "ZSNJ-MANUAL-N-2988652679-1217306862",
+        "ZSNJ-MANUAL-N-2988652494-1217308833",
+        "ZSNJ-MANUAL-N-2988651490-1217311628",
+        "ZSNJ-MANUAL-N-2988647745-1217316560"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-010-1",
+        "ZSNJ-MANUAL-E-PGL-010-2",
+        "ZSNJ-MANUAL-E-PGL-010-3",
+        "ZSNJ-MANUAL-E-PGL-010-4"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-011-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988657144-1217307265",
+        "ZSNJ-MANUAL-N-2988657861-1217309448",
+        "ZSNJ-MANUAL-N-2988657581-1217311549",
+        "ZSNJ-MANUAL-N-2988656227-1217313527",
+        "ZSNJ-MANUAL-N-2988652092-1217318700"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-011-1",
+        "ZSNJ-MANUAL-E-PGL-011-2",
+        "ZSNJ-MANUAL-E-PGL-011-3",
+        "ZSNJ-MANUAL-E-PGL-011-4"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-012-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988661148-1217309582",
+        "ZSNJ-MANUAL-N-2988661933-1217311531",
+        "ZSNJ-MANUAL-N-2988661243-1217314043",
+        "ZSNJ-MANUAL-N-2988659680-1217316449",
+        "ZSNJ-MANUAL-N-2988655908-1217320557"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-012-1",
+        "ZSNJ-MANUAL-E-PGL-012-2",
+        "ZSNJ-MANUAL-E-PGL-012-3",
+        "ZSNJ-MANUAL-E-PGL-012-4"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-013-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988665756-1217311802",
+        "ZSNJ-MANUAL-N-2988666408-1217313500",
+        "ZSNJ-MANUAL-N-2988666301-1217314793",
+        "ZSNJ-MANUAL-N-2988665423-1217316125",
+        "ZSNJ-MANUAL-N-2988660032-1217322428"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-013-1",
+        "ZSNJ-MANUAL-E-PGL-013-2",
+        "ZSNJ-MANUAL-E-PGL-013-3",
+        "ZSNJ-MANUAL-E-PGL-013-4"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-014-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988670776-1217314751",
+        "ZSNJ-MANUAL-N-2988671523-1217316320",
+        "ZSNJ-MANUAL-N-2988670731-1217317967",
+        "ZSNJ-MANUAL-N-2988669598-1217319073",
+        "ZSNJ-MANUAL-N-2988664037-1217324745"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-014-1",
+        "ZSNJ-MANUAL-E-PGL-014-2",
+        "ZSNJ-MANUAL-E-PGL-014-3",
+        "ZSNJ-MANUAL-E-PGL-014-4"
+      ]
+    },
+    {
+      "corridorId": "CORRIDOR-ZSNJ-MANUAL-E-PGL-015-1",
+      "nodeIds": [
+        "ZSNJ-MANUAL-N-2988674572-1217316777",
+        "ZSNJ-MANUAL-N-2988675339-1217318177",
+        "ZSNJ-MANUAL-N-2988675098-1217319938",
+        "ZSNJ-MANUAL-N-2988673668-1217321875",
+        "ZSNJ-MANUAL-N-2988668280-1217326740"
+      ],
+      "edgeIds": [
+        "ZSNJ-MANUAL-E-PGL-015-1",
+        "ZSNJ-MANUAL-E-PGL-015-2",
+        "ZSNJ-MANUAL-E-PGL-015-3",
+        "ZSNJ-MANUAL-E-PGL-015-4"
+      ]
+    }
+  ]
+}
+
