@@ -8,5 +8,5 @@ authors:
 version: 1.0.0
 date-released: 2026-10-26
 abstract: "Code, frozen inputs, tests, formal outputs, and deterministic-replay evidence for a 72-hour three-airport operational disruption experiment."
-repository-code: "TO_BE_ASSIGNED_AFTER_GITHUB_PUBLICATION"
+repository-code: "https://github.com/kilian136/csrse2026-airport-digital-twin-reproducibility"
 license: "All rights reserved until a public license is selected."
