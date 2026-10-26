@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSPD",
+  "coordinateSystem": "WGS84",
+  "geoJsonCoordinateOrder": "longitude_latitude",
+  "updatedAt": "2026-10-14T00:00:00.000Z",
+  "features": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-T1A-TUG-BASE-01",
+          "airportIdent": "ZSPD",
+          "kind": "ground_support_base",
+          "name": "T1A牵引车驻点一",
+          "parentTerminalId": "ZSPD-TERMINAL-T1",
+          "parentConcourseId": "ZSPD-T1-CONCOURSE-A",
+          "supportBaseId": "T1A-TUG-01",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-05T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.803965, 31.155156]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-T1A-TUG-BASE-02",
+          "airportIdent": "ZSPD",
+          "kind": "ground_support_base",
+          "name": "T1A牵引车驻点二",
+          "parentTerminalId": "ZSPD-TERMINAL-T1",
+          "parentConcourseId": "ZSPD-T1-CONCOURSE-A",
+          "supportBaseId": "T1A-TUG-02",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-05T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.805199, 31.151389]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-T1A-TUG-BASE-03",
+          "airportIdent": "ZSPD",
+          "kind": "ground_support_base",
+          "name": "T1A牵引车驻点三",
+          "parentTerminalId": "ZSPD-TERMINAL-T1",
+          "parentConcourseId": "ZSPD-T1-CONCOURSE-A",
+          "supportBaseId": "T1A-TUG-03",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-05T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.809549, 31.145732]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-T1B-TUG-BASE-01",
+          "airportIdent": "ZSPD",
+          "kind": "ground_support_base",
+          "name": "T1B牵引车驻点一",
+          "parentTerminalId": "ZSPD-TERMINAL-T1",
+          "parentConcourseId": "ZSPD-T1-CONCOURSE-B",
+          "supportBaseId": "T1B-TUG-01",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-05T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.799308, 31.14956]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-T1B-TUG-BASE-02",
+          "airportIdent": "ZSPD",
+          "kind": "ground_support_base",
+          "name": "T1B牵引车驻点二",
+          "parentTerminalId": "ZSPD-TERMINAL-T1",
+          "parentConcourseId": "ZSPD-T1-CONCOURSE-B",
+          "supportBaseId": "T1B-TUG-02",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-05T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.797848, 31.153385]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-T1B-TUG-BASE-03",
+          "airportIdent": "ZSPD",
+          "kind": "ground_support_base",
+          "name": "T1B牵引车驻点三",
+          "parentTerminalId": "ZSPD-TERMINAL-T1",
+          "parentConcourseId": "ZSPD-T1-CONCOURSE-B",
+          "supportBaseId": "T1B-TUG-03",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-05T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.801245, 31.14417]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-T2-TUG-BASE-A",
+          "airportIdent": "ZSPD",
+          "kind": "ground_support_base",
+          "name": "T2航站楼牵引车驻点A",
+          "parentTerminalId": "ZSPD-TERMINAL-T2",
+          "supportBaseId": "T2-TUG-A",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-07T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.8051073, 31.141059]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-T2-TUG-BASE-B",
+          "airportIdent": "ZSPD",
+          "kind": "ground_support_base",
+          "name": "T2航站楼牵引车驻点B",
+          "parentTerminalId": "ZSPD-TERMINAL-T2",
+          "supportBaseId": "T2-TUG-B",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-07T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.8087683, 31.131125]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-FUEL-BASE",
+          "airportIdent": "ZSPD",
+          "kind": "fuel_facility",
+          "name": "浦东航油车辆驻点",
+          "supportBaseId": "ZSPD-FUEL",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.7881792, 31.1625928]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-ARFF-BASE",
+          "airportIdent": "ZSPD",
+          "kind": "ground_support_base",
+          "name": "浦东消防救援驻点",
+          "supportBaseId": "ZSPD-ARFF",
+          "facilityStatus": "verified_real",
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.8158859, 31.1293386]
+        }
+      }
+    ]
+  }
+}

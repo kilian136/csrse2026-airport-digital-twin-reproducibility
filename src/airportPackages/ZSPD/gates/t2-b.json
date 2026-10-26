@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSPD",
+  "terminalId": "ZSPD-TERMINAL-T2",
+  "concourseId": "ZSPD-T2-CONCOURSE-B",
+  "gatePrefix": "T2-B",
+  "source": "user_wgs84",
+  "reviewNotes": [
+    "用户已确认本组14个登机口属于T2-B指廊。",
+    "当前未提供T2-B指廊独立边界，仅接入登机口与廊桥。",
+    "T2-B尚未加入受控滑行人工批准范围。"
+  ],
+  "gates": [
+    { "number": 1, "coordinate": [121.8099313, 31.1376310], "bridges": [{ "coordinate": [121.8097036, 31.1375548] }, { "coordinate": [121.8096002, 31.1376682] }] },
+    { "number": 2, "coordinate": [121.8092142, 31.1374123], "bridges": [{ "coordinate": [121.8088250, 31.1373041] }, { "coordinate": [121.8088715, 31.1374203] }] },
+    { "number": 3, "coordinate": [121.8081812, 31.1371509], "bridges": [{ "coordinate": [121.8080334, 31.1373812] }] },
+    { "number": 4, "coordinate": [121.8078446, 31.1370832], "bridges": [{ "coordinate": [121.8075647, 31.1372638] }] },
+    { "number": 5, "coordinate": [121.8074417, 31.1369712], "bridges": [{ "coordinate": [121.8072253, 31.1371436] }] },
+    { "number": 6, "coordinate": [121.8069132, 31.1367725], "bridges": [{ "coordinate": [121.8066037, 31.1366930] }, { "coordinate": [121.8066432, 31.1367879] }] },
+    { "number": 7, "coordinate": [121.8061917, 31.1365655], "bridges": [{ "coordinate": [121.8058388, 31.1364609] }, { "coordinate": [121.8057219, 31.1365899] }] },
+    { "number": 8, "coordinate": [121.8064481, 31.1355514], "bridges": [{ "coordinate": [121.8068438, 31.1356226] }, { "coordinate": [121.8068634, 31.1355311] }] },
+    { "number": 9, "coordinate": [121.8073445, 31.1357553], "bridges": [{ "coordinate": [121.8075926, 31.1355788] }] },
+    { "number": 10, "coordinate": [121.8078745, 31.1358704], "bridges": [{ "coordinate": [121.8080475, 31.1356730] }] },
+    { "number": 11, "coordinate": [121.8082504, 31.1360137], "bridges": [{ "coordinate": [121.8084165, 31.1357949] }] },
+    { "number": 12, "coordinate": [121.8087601, 31.1361425], "bridges": [{ "coordinate": [121.8089151, 31.1359529] }] },
+    { "number": 13, "coordinate": [121.8090404, 31.1362591], "bridges": [{ "coordinate": [121.8093955, 31.1363578] }, { "coordinate": [121.8095011, 31.1362386] }] },
+    { "number": 14, "coordinate": [121.8099622, 31.1365153], "bridges": [{ "coordinate": [121.8102806, 31.1365715] }, { "coordinate": [121.8102389, 31.1364824] }] }
+  ]
+}

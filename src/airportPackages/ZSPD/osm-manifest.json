@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSPD",
+  "source": "OpenStreetMap Overpass",
+  "license": "ODbL",
+  "capturedAt": "2026-10-04T15:12:10.651Z",
+  "center": {
+    "latitude": 31.1434,
+    "longitude": 121.805
+  },
+  "radiusMeters": 6500,
+  "bounds": {
+    "south": 31.085009773625583,
+    "west": 121.73677720242576,
+    "north": 31.201790226374417,
+    "east": 121.87322279757426
+  },
+  "rawElementCount": 2905,
+  "counts": {
+    "runway": 5,
+    "taxiway": 930,
+    "taxilane": 0,
+    "apron": 22,
+    "parking_position": 950,
+    "gate": 147,
+    "terminal": 4,
+    "holding_position": 67,
+    "hangar": 5,
+    "service_road": 775
+  },
+  "usagePolicy": {
+    "operationalNetwork": [
+      "runway lines",
+      "taxiway lines",
+      "taxilane lines",
+      "parking_position lines"
+    ],
+    "referenceOnly": [
+      "apron",
+      "parking_position points",
+      "gate",
+      "terminal",
+      "holding_position",
+      "hangar"
+    ],
+    "vehicleNetworkCandidate": [
+      "highway=service ways (read-only candidate; requires manual validation)"
+    ]
+  },
+  "serviceRoadImport": {
+    "source": "OpenStreetMap Overpass",
+    "highway": "service",
+    "authority": "candidate_only",
+    "marginMeters": 300,
+    "bounds": {
+      "south": 31.091918366475024,
+      "west": 121.77628037155498,
+      "north": 31.175842233524975,
+      "east": 121.85715012844503
+    },
+    "wayCount": 775,
+    "oneWayCount": 91,
+    "accessCounts": {
+      "private": 318,
+      "unspecified": 454,
+      "no": 3
+    }
+  }
+}

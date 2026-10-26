@@ -1,0 +1,443 @@
+{
+  "schemaVersion": "1.0.0",
+  "airportIdent": "ZSPD",
+  "coordinateSystem": "WGS84",
+  "geoJsonCoordinateOrder": "longitude_latitude",
+  "updatedAt": "2026-10-06T00:00:00.000Z",
+  "features": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-FACILITY-A",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_facility",
+          "name": "货运保障区A",
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "facilityFunctions": ["cargo_handling", "uld_staging", "cargo_loading_support"],
+          "plannedStandCount": 11,
+          "mappedStandCount": 11,
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [121.8067772, 31.1412563],
+            [121.8075834, 31.1391431],
+            [121.8060693, 31.1387186],
+            [121.8051792, 31.1410864],
+            [121.8054655, 31.1409063],
+            [121.8067772, 31.1412563]
+          ]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-01",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-01",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 1,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8068336, 31.1415069] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-02",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-02",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 2,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8069595, 31.1411698] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-03",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-03",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 3,
+          "aircraftSizeCategory": "large",
+          "compatibleAircraftSizeCategories": ["large"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8070502, 31.1406485] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-04",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-04",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 4,
+          "aircraftSizeCategory": "large",
+          "compatibleAircraftSizeCategories": ["large"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.807293, 31.1400418] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-05",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-05",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 5,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8076052, 31.1395623] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-06",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-06",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 6,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8058433, 31.1391325] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-07",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-07",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 7,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8057016, 31.1394732] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-08",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-08",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 8,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8055399, 31.1398172] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-09",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-09",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 9,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8053956, 31.1401538] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-10",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-10",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 10,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8052658, 31.1405066] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-A-STAND-11",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机A-11",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-A",
+          "standNumber": 11,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8051316, 31.1408547] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-FACILITY-B",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_facility",
+          "name": "货运保障区B",
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "facilityFunctions": ["cargo_handling", "uld_staging", "cargo_loading_support"],
+          "plannedStandCount": 11,
+          "mappedStandCount": 11,
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [121.8094574, 31.1341752],
+            [121.8105002, 31.1313895],
+            [121.8089415, 31.130944],
+            [121.8078988, 31.1337418],
+            [121.8094574, 31.1341752]
+          ]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-01",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-01",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 1,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8097727, 31.1338301] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-02",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-02",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 2,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8098047, 31.1332927] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-03",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-03",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 3,
+          "aircraftSizeCategory": "large",
+          "compatibleAircraftSizeCategories": ["large"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.810046, 31.1326754] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-04",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-04",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 4,
+          "aircraftSizeCategory": "large",
+          "compatibleAircraftSizeCategories": ["large"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8103529, 31.1321994] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-05",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-05",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 5,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8104795, 31.1318473] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-06",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-06",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 6,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8086796, 31.1315644] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-07",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-07",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 7,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8085615, 31.1319128] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-08",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-08",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 8,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8084359, 31.1322622] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-09",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-09",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 9,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8083008, 31.1326088] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-10",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-10",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 10,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8081872, 31.1329538] }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "ZSPD-CARGO-B-STAND-11",
+          "airportIdent": "ZSPD",
+          "kind": "cargo_stand",
+          "name": "货机B-11",
+          "parentZoneId": "ZSPD-CARGO-FACILITY-B",
+          "standNumber": 11,
+          "compatibleAircraftSizeCategories": ["small", "medium"],
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "dataStatus": "complete",
+          "source": "user_wgs84",
+          "operational": true
+        },
+        "geometry": { "type": "Point", "coordinates": [121.8080553, 31.1333014] }
+      }
+    ]
+  }
+}
